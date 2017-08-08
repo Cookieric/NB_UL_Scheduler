@@ -1,0 +1,26 @@
+#IncludeRegexLine: ^[ 	]*#[ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+C:/Users/bmw/Desktop/Thesis_Being/NB_MAC_Scheduler_Prototype/Simulation/src/rrc_NB.c
+rrc_NB.h
+C:/Users/bmw/Desktop/Thesis_Being/NB_MAC_Scheduler_Prototype/Simulation/src/rrc_NB.h
+stdio.h
+-
+stdlib.h
+-
+
+C:/Users/bmw/Desktop/Thesis_Being/NB_MAC_Scheduler_Prototype/Simulation/src/rrc_NB.h
+stdbool.h
+-
+type_NB.h
+C:/Users/bmw/Desktop/Thesis_Being/NB_MAC_Scheduler_Prototype/Simulation/src/type_NB.h
+
+C:/Users/bmw/Desktop/Thesis_Being/NB_MAC_Scheduler_Prototype/Simulation/src/type_NB.h
+stdint.h
+-
+
