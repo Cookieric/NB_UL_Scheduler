@@ -725,6 +725,7 @@ int UE_id=0;
 
 extern uint8_t mappingBufferSize;
 uint32_t Sum_Occupied_resource__U=0;
+uint32_t cnt_CRC=0;
 
 uint32_t Ulsch_ind(frame_t frame,sub_frame_t subframes,UL_IND_t & UL_Indicaiton)
 {
@@ -734,7 +735,7 @@ uint32_t Ulsch_ind(frame_t frame,sub_frame_t subframes,UL_IND_t & UL_Indicaiton)
     // ctime=H_SFN * 10240+frame * 10+subframes; // calculate the current time
     if(((H_SFN * 10240+frame * 10+subframes)%1000)==0)//New UE's Msg3 arrive with fixed Inter aiival time
     {
-    	if(highOfferedLoad==0)	new_num_UE=10;
+    	if(highOfferedLoad==0)	new_num_UE=6;
     	else if(highOfferedLoad==1)	new_num_UE=10;
 
     	totalNumUE=totalNumUE+new_num_UE;
@@ -926,11 +927,13 @@ uint32_t Ulsch_ind(frame_t frame,sub_frame_t subframes,UL_IND_t & UL_Indicaiton)
 	            else//Msg5,UL Info
 	            {
 	    			(*it1).CRC_indication=get_CRC_indication();
+	    			// (*it1).CRC_indication=0;
 	    			// (*it1).round=1;//round++;
 	    			// (*it1).round++;
 	    			// if((*it1).UL_Buffer_Size>200)	(*it1).UL_Buffer_Size=200;
 	                if((*it1).CRC_indication==1)//Ready to rescheudle Msg5, ULInfo
 	                {
+	                	++cnt_CRC;
 	                	(*it1).BSR=get_BSR_index((*it1).payloadSize);
 						if(mappingBufferSize==0)	(*it1).UL_Buffer_Size=BSR_table[(*it1).BSR];
 						else if(mappingBufferSize==1)	(*it1).UL_Buffer_Size=BSR1_table[(*it1).BSR];

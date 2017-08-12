@@ -95,7 +95,7 @@ figure(1)
 hs = plot(xs_Sort1_0, ys_Sort1_Average,'bo-',xs_Sort1_0,ys_Sort2_Average,'rsquare-');
 legend('Sorting 1:CE0/1/2','Sorting 2:CE0/1/2');
 set(hs, 'linewidth', 1.0);    % 曲線寬度改為1.5
-axis([0, 200, 0,1000]);
+axis([0, 200, 0,800]);
 xlabel('Payload Size of each UE'),ylabel('(Da)(ms)');
 title('Average Delay of each UE  for three CE levels [M=30][Ma=6/sec]');
 grid on

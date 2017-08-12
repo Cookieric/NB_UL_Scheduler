@@ -80,6 +80,9 @@ extern uint32_t P_Sum_Delay[2][3];
 extern uint32_t P_CE_NumUE[2][3];
 double P_delay[6]={0.0};
 
+extern uint32_t cnt_CRC;
+uint32_t cnt_N=0;
+
 //1: pp are same for 3 CE levels
 //2: pp are different for 3 CE levels
 //3: pp are different with different payload size (low offered load) 20~200
@@ -89,7 +92,7 @@ double P_delay[6]={0.0};
 uint8_t highOfferedLoad=0;
 
 //Simulation setting
-uint8_t TotalNumUE[10]={60,12,18,24,30,36,42,48,54,60};
+uint8_t TotalNumUE[10]={30,12,18,24,30,36,42,48,54,60};
 //{24,48,72,96,120,144,168,192,216,240};
 //{12,24,36,48,60,72,84,96,108,120};
 //{20,40,60,80,100,120,140,160,180,200};
@@ -385,8 +388,8 @@ int main(int argc, char const *argv[])//design simulation base on different argv
 				// NB_schedule_dlsch(frame,subframes,DL_Channel_bitmap);
 			}
 		}
-		for (int i = 2; i >= 0; --i)
-		// for (int i = 0; i < 3; ++i)
+		// for (int i = 2; i >= 0; --i)
+		for (int i = 0; i < 3; ++i)
 		{
 			if((((H_SFN * 10240+frame * 10+subframes+1)%USS_NPDCCH_period[i])==0)||(H_SFN * 10240+frame * 10+subframes)==0)
 			{
@@ -509,7 +512,7 @@ int main(int argc, char const *argv[])//design simulation base on different argv
 					// LOG("CE0:%d,Sum_Delay[0]:%d,CE1:%d,Sum_Delay[1]:%d,CE2:%d,Sum_Delay[2]:%d\n",CEi_NumUE[0],Sum_Delay[0],CEi_NumUE[1],Sum_Delay[1],CEi_NumUE[2],Sum_Delay[2]);
     	// 			LOG("T_Average_DelayCE0:%lf,T_Average_DelayCE1:%lf,T_Average_DelayCE2:%lf,T_AvailResource[runCase]:%d,T_OccupiedResource[runCase]:%d,U:%lf\n",T_Average_Delay[0][runCase],T_Average_Delay[1][runCase],T_Average_Delay[2][runCase],T_AvailResource[runCase],T_OccupiedResource[runCase],T_OccupiedResource[runCase]/T_AvailResource[runCase]);
 
-    				fout_LOG<<"OccupiedResource:"<<T_OccupiedResource[runCase]<<"AvailResource:"<<T_AvailResource[runCase]<<endl;
+    				fout_LOG<<"OccupiedResource:"<<T_OccupiedResource[runCase]<<"AvailResource:"<<T_AvailResource[runCase]<<"cnt_CRC:"<<cnt_CRC<<"cnt_N:"<<cnt_N<<endl;
     				fout_LOG<<"U:"<<T_OccupiedResource[runCase]/T_AvailResource[runCase]<<endl;
 					fout_LOG<<"Sum_End_Time:"<<Sum_End_Time<<",Sum_nprach_resource_U:"<<Sum_nprach_resource_U<<",Sum_Occupied_resource__U:"<<Sum_Occupied_resource__U<<endl;
 

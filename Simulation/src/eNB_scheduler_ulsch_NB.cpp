@@ -87,8 +87,8 @@ extern uint8_t highOfferedLoad;
 // /* Do your stuff here */
 // printf("Time taken: %.2fs\n", (double)(clock() - tStart)/CLOCKS_PER_SEC);
 // return 0;
+extern uint32_t cnt_N;
 
-uint32_t N=0;
 // void NB_schedule_ulsch(frame_t frame,sub_frame_t subframes,uint32_t NPDCCH_period,uint32_t *DL_Channel_bitmap,
 // 	uint32_t **UL_Channel_bitmap,SIB2_NB * SIB2_NB_S,UL_IND_t & UL_Indicaiton)
 void NB_schedule_ulsch(uint32_t scheH_SFN,frame_t scheFrame,sub_frame_t scheSubframe,uint32_t CE_Level,MIB_NB & MIB_NB_S,SIB1_NB & SIB1_NB_S,SIB2_NB & SIB2_NB_S,RRCCoonectionSetup_NB & Msg4_S,UL_IND_t & UL_Indicaiton)
@@ -239,8 +239,8 @@ void NB_schedule_ulsch(uint32_t scheH_SFN,frame_t scheFrame,sub_frame_t scheSubf
 				   	if(File_LOG_Flag)
 					{
 						fout_LOG<<"Not receive next UL transmission with BSR before this scheduling"<<",CE_Level:"<<(*it1).CE_Level<<",UE_id:"<<(*it1).UE_id<<",CRC:"<<(*it1).CRC_indication<<",round:"<<(*it1).round<<",first_Arrival_Time:"<<",sche_Msg5_Time:"<<(*it1).sche_Msg5_Time<<"next_Arrival_Time"<<(*it1).next_Arrival_Time<<",UL_Buffer_Size:"<<(*it1).UL_Buffer_Size<<endl;
-						continue;
 					}
+					continue;
 				}
 				else if((*it1).next_Arrival_Time==-1)
 				{
@@ -596,6 +596,7 @@ void NB_schedule_ulsch(uint32_t scheH_SFN,frame_t scheFrame,sub_frame_t scheSubf
     // 			}
 				// mcs=mapped_mcs[(*it1).CE_Level][mappedMcsIndex];
 				mcs=mapped_mcs[(*it1).PHR];
+				// mcs=6;
 				TBS=get_TBS_UL(mcs,(*it1).multi_tone,ru_index,max_Iru);
 				// mcs=6;
 				// TBS=get_TBS_UL(mcs,(*it1).multi_tone,ru_index,max_Iru);
@@ -612,6 +613,7 @@ void NB_schedule_ulsch(uint32_t scheH_SFN,frame_t scheFrame,sub_frame_t scheSubf
 
 			// fout_LOG<<"[Finish Step1~3]"<<"UE_Id:"<<(*it1).UE_id<<endl;
 			//Step 4: Pre UL resource mapping
+			uint32_t N=0;
 			uint32_t Nrep[3]={SIB2_NB_S.rep[0],SIB2_NB_S.rep[1],SIB2_NB_S.rep[2]};
             uint32_t Nulslots=num_ULslots(Isc);
             //1 UL slots=0.5ms
@@ -619,10 +621,11 @@ void NB_schedule_ulsch(uint32_t scheH_SFN,frame_t scheFrame,sub_frame_t scheSubf
 			// (*it1).Resource=N;
 			//If ReTx, delete previous allocated UL data resource
             // if((*it1).CRC_indication)	Sum_Occupied_resource__U=Sum_Occupied_resource__U-N;
-            if((*it1).CRC_indication==0)	Sum_Occupied_resource__U=Sum_Occupied_resource__U+N;
-            else if((*it1).CRC_indication==1)	Sum_Occupied_resource__U=Sum_Occupied_resource__U-N;
+            // if((*it1).CRC_indication==0)	Sum_Occupied_resource__U=Sum_Occupied_resource__U+N;
+            // else if((*it1).CRC_indication==1)	Sum_Occupied_resource__U=Sum_Occupied_resource__U-N;
             //How many reosurce occupied in this UE(single-tone)
-            // Sum_Occupied_resource__U=Sum_Occupied_resource__U+N;
+            cnt_N++;
+            Sum_Occupied_resource__U=Sum_Occupied_resource__U+N;
 
             //TS. 36.211 resource mapping
 			while(N>0)
