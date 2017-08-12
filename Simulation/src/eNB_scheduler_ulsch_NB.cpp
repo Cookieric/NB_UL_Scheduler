@@ -701,6 +701,7 @@ void NB_schedule_ulsch(uint32_t scheH_SFN,frame_t scheFrame,sub_frame_t scheSubf
 	                	 /*Delete fail device*/
 	 	                it1 = UE_Info_List.erase (it1);
 						--it1;
+						continue;
 	                }
 	                // Sum_Delay=Sum_Delay+(*it1).next_Arrival_Time-(*it1).first_Arrival_Time;
 	                Sum_Delay[(*it1).CE_Level]=Sum_Delay[(*it1).CE_Level]+(*it1).next_Arrival_Time-(*it1).first_Arrival_Time;

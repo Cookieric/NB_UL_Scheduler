@@ -1,0 +1,39 @@
+OccupiedResource:3.07967e+007AvailResource:6.57395e+008
+U:0.0468465
+Sum_End_Time:55370433,Sum_nprach_resource_U:7050000,Sum_Occupied_resource__U:30796696
+OccupiedResource:6.43283e+007AvailResource:6.64376e+008
+U:0.0968251
+Sum_End_Time:55952149,Sum_nprach_resource_U:7050141,Sum_Occupied_resource__U:64328264
+OccupiedResource:8.09875e+007AvailResource:6.95023e+008
+U:0.116525
+Sum_End_Time:58508805,Sum_nprach_resource_U:7082949,Sum_Occupied_resource__U:80987536
+OccupiedResource:1.03082e+008AvailResource:6.99981e+008
+U:0.147264
+Sum_End_Time:58924335,Sum_nprach_resource_U:7111008,Sum_Occupied_resource__U:103082024
+OccupiedResource:1.28003e+008AvailResource:7.81986e+008
+U:0.16369
+Sum_End_Time:65829071,Sum_nprach_resource_U:7963137,Sum_Occupied_resource__U:128003016
+OccupiedResource:1.41972e+008AvailResource:7.83567e+008
+U:0.181187
+Sum_End_Time:65957911,Sum_nprach_resource_U:7928073,Sum_Occupied_resource__U:141972240
+OccupiedResource:1.7117e+008AvailResource:8.73292e+008
+U:0.196005
+Sum_End_Time:73508494,Sum_nprach_resource_U:8810262,Sum_Occupied_resource__U:171169744
+OccupiedResource:1.87191e+008AvailResource:9.71758e+008
+U:0.192631
+Sum_End_Time:81791446,Sum_nprach_resource_U:9739152,Sum_Occupied_resource__U:187190768
+OccupiedResource:2.15201e+008AvailResource:1.0497e+009
+U:0.205011
+Sum_End_Time:88348122,Sum_nprach_resource_U:10472604,Sum_Occupied_resource__U:215200848
+[TBS>=UL_Buffer_Size],exceed delay budget..CE_Level:2 UE_id 51 CRC:0 round:1 first_Arrival_Time:5000 sche_Msg5_Time:0 EndTime:15985 UL_Buffer_Size10
+[TBS>=UL_Buffer_Size],exceed delay budget..CE_Level:2 UE_id 56 CRC:0 round:1 first_Arrival_Time:5000 sche_Msg5_Time:0 EndTime:16495 UL_Buffer_Size10
+[TBS>=UL_Buffer_Size],exceed delay budget..CE_Level:2 UE_id 55 CRC:0 round:1 first_Arrival_Time:5000 sche_Msg5_Time:0 EndTime:15470 UL_Buffer_Size10
+[TBS>=UL_Buffer_Size],exceed delay budget..CE_Level:2 UE_id 41 CRC:0 round:1 first_Arrival_Time:4000 sche_Msg5_Time:0 EndTime:14443 UL_Buffer_Size10
+[TBS>=UL_Buffer_Size],exceed delay budget..CE_Level:2 UE_id 50 CRC:0 round:1 first_Arrival_Time:5000 sche_Msg5_Time:0 EndTime:15063 UL_Buffer_Size42
+[TBS>=UL_Buffer_Size],exceed delay budget..CE_Level:2 UE_id 55 CRC:0 round:1 first_Arrival_Time:5000 sche_Msg5_Time:0 EndTime:15980 UL_Buffer_Size10
+[TBS>=UL_Buffer_Size],exceed delay budget..CE_Level:2 UE_id 53 CRC:0 round:1 first_Arrival_Time:5000 sche_Msg5_Time:0 EndTime:15470 UL_Buffer_Size10
+[TBS>=UL_Buffer_Size],exceed delay budget..CE_Level:2 UE_id 51 CRC:0 round:1 first_Arrival_Time:5000 sche_Msg5_Time:0 EndTime:15486 UL_Buffer_Size10
+[TBS>=UL_Buffer_Size],exceed delay budget..CE_Level:2 UE_id 51 CRC:0 round:1 first_Arrival_Time:5000 sche_Msg5_Time:0 EndTime:15980 UL_Buffer_Size10
+OccupiedResource:2.45926e+008AvailResource:1.15637e+009
+U:0.212672
+Sum_End_Time:97317889,Sum_nprach_resource_U:11449329,Sum_Occupied_resource__U:245926336

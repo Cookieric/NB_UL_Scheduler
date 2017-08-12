@@ -685,17 +685,24 @@ uint32_t get_CRC_indication()
 	else	return 1;//decode UL transmission fail
 }
 
+
 uint32_t Sche_res(frame_t frame,sub_frame_t subframes,Sche_RES_t & Sche_Response)
 {
 	uint32_t DCI_Send=H_SFN * 10240+frame * 10+subframes;
 	list<HI_DCI0_request_t> & DCI_List=Sche_Response.DCI_L;
 	// typename list<HI_DCI0_request_t>::iterator DCI_it1 = DCI_List.begin();
+
 	while(!DCI_List.empty())
 	{
 		// LOG("H_SFN:%d,frame:%d,subframes:%d",H_SFN,frame,subframes);
 		// LOG(",Send DCI(DCI startTime/EndTime:%d/",DCI_List.front().DCI_Format.DCI_UL_PDU.startTime);
 		// LOG("%d\n",DCI_List.front().DCI_Format.DCI_UL_PDU.endTime);
 		// LOG("H_SFN:%d,frame:%d,subframes:%d,Send DCI(DCI startTime/EndTime:%d/%d) to PHY from DCI_List\n",H_SFN,frame,subframes,DCI_List.front().DCI_Format.DCI_UL_PDU.startTime,DCI_List.front().DCI_Format.DCI_UL_PDU.startTime.endTime);
+		// uint32_t RU_table[8]={1,2,3,4,5,6,8,10};
+		// uint32_t Nrep[3]={1,2,4};
+		// uint32_t Nulslots=num_ULslots((*DCI_it1).DCI_Format.DCI_UL_PDU.DCIN0.scind);
+		// N=RU_table[(*DCI_it1).DCI_Format.DCI_UL_PDU.DCIN0.ResAssign] * Nrep[(*it1).CE_Level] * Nulslots * 0.5;
+
 		DCI_List.pop_front ();
 	}
 	// if((DCI_Send==(*DCI_it1).DCI_Format.DCI_UL_PDU.startTime)&&(DCI_Send!=0))
@@ -727,7 +734,7 @@ uint32_t Ulsch_ind(frame_t frame,sub_frame_t subframes,UL_IND_t & UL_Indicaiton)
     // ctime=H_SFN * 10240+frame * 10+subframes; // calculate the current time
     if(((H_SFN * 10240+frame * 10+subframes)%1000)==0)//New UE's Msg3 arrive with fixed Inter aiival time
     {
-    	if(highOfferedLoad==0)	new_num_UE=6;
+    	if(highOfferedLoad==0)	new_num_UE=10;
     	else if(highOfferedLoad==1)	new_num_UE=10;
 
     	totalNumUE=totalNumUE+new_num_UE;

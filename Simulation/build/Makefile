@@ -47,10 +47,10 @@ RM = C:\Users\bmw\Downloads\cmake-3.7.1-win64-x64\cmake-3.7.1-win64-x64\bin\cmak
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = C:\Users\bmw\Desktop\Thesis_Being\NB_MAC_Scheduler_Prototype\Simulation\src
+CMAKE_SOURCE_DIR = C:\Users\bmw\Desktop\NB_UL_Scheduler_Prototype\Simulation\src
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = C:\Users\bmw\Desktop\Thesis_Being\NB_MAC_Scheduler_Prototype\Simulation\build
+CMAKE_BINARY_DIR = C:\Users\bmw\Desktop\NB_UL_Scheduler_Prototype\Simulation\build
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -79,9 +79,9 @@ rebuild_cache/fast: rebuild_cache
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\bmw\Desktop\Thesis_Being\NB_MAC_Scheduler_Prototype\Simulation\build\CMakeFiles C:\Users\bmw\Desktop\Thesis_Being\NB_MAC_Scheduler_Prototype\Simulation\build\CMakeFiles\progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\bmw\Desktop\NB_UL_Scheduler_Prototype\Simulation\build\CMakeFiles C:\Users\bmw\Desktop\NB_UL_Scheduler_Prototype\Simulation\build\CMakeFiles\progress.marks
 	$(MAKE) -f CMakeFiles\Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\bmw\Desktop\Thesis_Being\NB_MAC_Scheduler_Prototype\Simulation\build\CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\bmw\Desktop\NB_UL_Scheduler_Prototype\Simulation\build\CMakeFiles 0
 .PHONY : all
 
 # The main clean target

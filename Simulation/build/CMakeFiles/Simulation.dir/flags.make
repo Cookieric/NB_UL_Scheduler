@@ -9,7 +9,7 @@ C_DEFINES =
 
 C_INCLUDES = 
 
-CXX_FLAGS =  
+CXX_FLAGS = -O0 -g  
 
 CXX_DEFINES = 
 

@@ -10,7 +10,7 @@ The output was:
 
 Compilation of the C compiler identification source "CMakeCCompilerId.c" produced "a.exe"
 
-The C compiler identification is GNU, found in "C:/Users/bmw/Desktop/Thesis_Being/NB_MAC_Scheduler_Prototype/Simulation/build/CMakeFiles/3.7.1/CompilerIdC/a.exe"
+The C compiler identification is GNU, found in "C:/Users/bmw/Desktop/NB_UL_Scheduler_Prototype/Simulation/build/CMakeFiles/3.7.1/CompilerIdC/a.exe"
 
 Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" succeeded.
 Compiler: D:/gcc/MinGW/4.8.1-x64/bin/g++.exe 
@@ -23,37 +23,37 @@ The output was:
 
 Compilation of the CXX compiler identification source "CMakeCXXCompilerId.cpp" produced "a.exe"
 
-The CXX compiler identification is GNU, found in "C:/Users/bmw/Desktop/Thesis_Being/NB_MAC_Scheduler_Prototype/Simulation/build/CMakeFiles/3.7.1/CompilerIdCXX/a.exe"
+The CXX compiler identification is GNU, found in "C:/Users/bmw/Desktop/NB_UL_Scheduler_Prototype/Simulation/build/CMakeFiles/3.7.1/CompilerIdCXX/a.exe"
 
 Determining if the C compiler works passed with the following output:
-Change Dir: C:/Users/bmw/Desktop/Thesis_Being/NB_MAC_Scheduler_Prototype/Simulation/build/CMakeFiles/CMakeTmp
+Change Dir: C:/Users/bmw/Desktop/NB_UL_Scheduler_Prototype/Simulation/build/CMakeFiles/CMakeTmp
 
-Run Build Command:"D:/gcc/MinGW/4.8.1-x64/bin/mingw32-make.exe" "cmTC_51c85/fast"
-D:/gcc/MinGW/4.8.1-x64/bin/mingw32-make.exe -f CMakeFiles\cmTC_51c85.dir\build.make CMakeFiles/cmTC_51c85.dir/build
-mingw32-make.exe[1]: Entering directory 'C:/Users/bmw/Desktop/Thesis_Being/NB_MAC_Scheduler_Prototype/Simulation/build/CMakeFiles/CMakeTmp'
-Building C object CMakeFiles/cmTC_51c85.dir/testCCompiler.c.obj
-D:\gcc\MinGW\4.8.1-x64\bin\gcc.exe     -o CMakeFiles\cmTC_51c85.dir\testCCompiler.c.obj   -c C:\Users\bmw\Desktop\Thesis_Being\NB_MAC_Scheduler_Prototype\Simulation\build\CMakeFiles\CMakeTmp\testCCompiler.c
-Linking C executable cmTC_51c85.exe
-C:\Users\bmw\Downloads\cmake-3.7.1-win64-x64\cmake-3.7.1-win64-x64\bin\cmake.exe -E cmake_link_script CMakeFiles\cmTC_51c85.dir\link.txt --verbose=1
-C:\Users\bmw\Downloads\cmake-3.7.1-win64-x64\cmake-3.7.1-win64-x64\bin\cmake.exe -E remove -f CMakeFiles\cmTC_51c85.dir/objects.a
-D:\gcc\MinGW\4.8.1-x64\bin\ar.exe cr CMakeFiles\cmTC_51c85.dir/objects.a @CMakeFiles\cmTC_51c85.dir\objects1.rsp
-D:\gcc\MinGW\4.8.1-x64\bin\gcc.exe       -Wl,--whole-archive CMakeFiles\cmTC_51c85.dir/objects.a -Wl,--no-whole-archive  -o cmTC_51c85.exe -Wl,--out-implib,libcmTC_51c85.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles\cmTC_51c85.dir\linklibs.rsp
-mingw32-make.exe[1]: Leaving directory 'C:/Users/bmw/Desktop/Thesis_Being/NB_MAC_Scheduler_Prototype/Simulation/build/CMakeFiles/CMakeTmp'
+Run Build Command:"D:/gcc/MinGW/4.8.1-x64/bin/mingw32-make.exe" "cmTC_a6746/fast"
+D:/gcc/MinGW/4.8.1-x64/bin/mingw32-make.exe -f CMakeFiles\cmTC_a6746.dir\build.make CMakeFiles/cmTC_a6746.dir/build
+mingw32-make.exe[1]: Entering directory 'C:/Users/bmw/Desktop/NB_UL_Scheduler_Prototype/Simulation/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_a6746.dir/testCCompiler.c.obj
+D:\gcc\MinGW\4.8.1-x64\bin\gcc.exe     -o CMakeFiles\cmTC_a6746.dir\testCCompiler.c.obj   -c C:\Users\bmw\Desktop\NB_UL_Scheduler_Prototype\Simulation\build\CMakeFiles\CMakeTmp\testCCompiler.c
+Linking C executable cmTC_a6746.exe
+C:\Users\bmw\Downloads\cmake-3.7.1-win64-x64\cmake-3.7.1-win64-x64\bin\cmake.exe -E cmake_link_script CMakeFiles\cmTC_a6746.dir\link.txt --verbose=1
+C:\Users\bmw\Downloads\cmake-3.7.1-win64-x64\cmake-3.7.1-win64-x64\bin\cmake.exe -E remove -f CMakeFiles\cmTC_a6746.dir/objects.a
+D:\gcc\MinGW\4.8.1-x64\bin\ar.exe cr CMakeFiles\cmTC_a6746.dir/objects.a @CMakeFiles\cmTC_a6746.dir\objects1.rsp
+D:\gcc\MinGW\4.8.1-x64\bin\gcc.exe       -Wl,--whole-archive CMakeFiles\cmTC_a6746.dir/objects.a -Wl,--no-whole-archive  -o cmTC_a6746.exe -Wl,--out-implib,libcmTC_a6746.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles\cmTC_a6746.dir\linklibs.rsp
+mingw32-make.exe[1]: Leaving directory 'C:/Users/bmw/Desktop/NB_UL_Scheduler_Prototype/Simulation/build/CMakeFiles/CMakeTmp'
 
 
 Detecting C compiler ABI info compiled with the following output:
-Change Dir: C:/Users/bmw/Desktop/Thesis_Being/NB_MAC_Scheduler_Prototype/Simulation/build/CMakeFiles/CMakeTmp
+Change Dir: C:/Users/bmw/Desktop/NB_UL_Scheduler_Prototype/Simulation/build/CMakeFiles/CMakeTmp
 
-Run Build Command:"D:/gcc/MinGW/4.8.1-x64/bin/mingw32-make.exe" "cmTC_072fe/fast"
-D:/gcc/MinGW/4.8.1-x64/bin/mingw32-make.exe -f CMakeFiles\cmTC_072fe.dir\build.make CMakeFiles/cmTC_072fe.dir/build
-mingw32-make.exe[1]: Entering directory 'C:/Users/bmw/Desktop/Thesis_Being/NB_MAC_Scheduler_Prototype/Simulation/build/CMakeFiles/CMakeTmp'
-Building C object CMakeFiles/cmTC_072fe.dir/CMakeCCompilerABI.c.obj
-D:\gcc\MinGW\4.8.1-x64\bin\gcc.exe     -o CMakeFiles\cmTC_072fe.dir\CMakeCCompilerABI.c.obj   -c C:\Users\bmw\Downloads\cmake-3.7.1-win64-x64\cmake-3.7.1-win64-x64\share\cmake-3.7\Modules\CMakeCCompilerABI.c
-Linking C executable cmTC_072fe.exe
-C:\Users\bmw\Downloads\cmake-3.7.1-win64-x64\cmake-3.7.1-win64-x64\bin\cmake.exe -E cmake_link_script CMakeFiles\cmTC_072fe.dir\link.txt --verbose=1
-C:\Users\bmw\Downloads\cmake-3.7.1-win64-x64\cmake-3.7.1-win64-x64\bin\cmake.exe -E remove -f CMakeFiles\cmTC_072fe.dir/objects.a
-D:\gcc\MinGW\4.8.1-x64\bin\ar.exe cr CMakeFiles\cmTC_072fe.dir/objects.a @CMakeFiles\cmTC_072fe.dir\objects1.rsp
-D:\gcc\MinGW\4.8.1-x64\bin\gcc.exe      -v -Wl,--whole-archive CMakeFiles\cmTC_072fe.dir/objects.a -Wl,--no-whole-archive  -o cmTC_072fe.exe -Wl,--out-implib,libcmTC_072fe.dll.a -Wl,--major-image-version,0,--minor-image-version,0   
+Run Build Command:"D:/gcc/MinGW/4.8.1-x64/bin/mingw32-make.exe" "cmTC_ca77d/fast"
+D:/gcc/MinGW/4.8.1-x64/bin/mingw32-make.exe -f CMakeFiles\cmTC_ca77d.dir\build.make CMakeFiles/cmTC_ca77d.dir/build
+mingw32-make.exe[1]: Entering directory 'C:/Users/bmw/Desktop/NB_UL_Scheduler_Prototype/Simulation/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_ca77d.dir/CMakeCCompilerABI.c.obj
+D:\gcc\MinGW\4.8.1-x64\bin\gcc.exe     -o CMakeFiles\cmTC_ca77d.dir\CMakeCCompilerABI.c.obj   -c C:\Users\bmw\Downloads\cmake-3.7.1-win64-x64\cmake-3.7.1-win64-x64\share\cmake-3.7\Modules\CMakeCCompilerABI.c
+Linking C executable cmTC_ca77d.exe
+C:\Users\bmw\Downloads\cmake-3.7.1-win64-x64\cmake-3.7.1-win64-x64\bin\cmake.exe -E cmake_link_script CMakeFiles\cmTC_ca77d.dir\link.txt --verbose=1
+C:\Users\bmw\Downloads\cmake-3.7.1-win64-x64\cmake-3.7.1-win64-x64\bin\cmake.exe -E remove -f CMakeFiles\cmTC_ca77d.dir/objects.a
+D:\gcc\MinGW\4.8.1-x64\bin\ar.exe cr CMakeFiles\cmTC_ca77d.dir/objects.a @CMakeFiles\cmTC_ca77d.dir\objects1.rsp
+D:\gcc\MinGW\4.8.1-x64\bin\gcc.exe      -v -Wl,--whole-archive CMakeFiles\cmTC_ca77d.dir/objects.a -Wl,--no-whole-archive  -o cmTC_ca77d.exe -Wl,--out-implib,libcmTC_ca77d.dll.a -Wl,--major-image-version,0,--minor-image-version,0   
 Using built-in specs.
 COLLECT_GCC=D:\gcc\MinGW\4.8.1-x64\bin\gcc.exe
 COLLECT_LTO_WRAPPER=d:/gcc/mingw/4.8.1-x64/bin/../libexec/gcc/x86_64-w64-mingw32/4.8.1/lto-wrapper.exe
@@ -63,25 +63,25 @@ Thread model: posix
 gcc version 4.8.1 (tdm64-2) 
 COMPILER_PATH=d:/gcc/mingw/4.8.1-x64/bin/../libexec/gcc/x86_64-w64-mingw32/4.8.1/;d:/gcc/mingw/4.8.1-x64/bin/../libexec/gcc/;d:/gcc/mingw/4.8.1-x64/bin/../lib/gcc/x86_64-w64-mingw32/4.8.1/../../../../x86_64-w64-mingw32/bin/
 LIBRARY_PATH=d:/gcc/mingw/4.8.1-x64/bin/../lib/gcc/x86_64-w64-mingw32/4.8.1/;d:/gcc/mingw/4.8.1-x64/bin/../lib/gcc/;d:/gcc/mingw/4.8.1-x64/bin/../lib/gcc/x86_64-w64-mingw32/4.8.1/../../../../x86_64-w64-mingw32/lib/../lib/;d:/gcc/mingw/4.8.1-x64/bin/../lib/gcc/x86_64-w64-mingw32/4.8.1/../../../../lib/;d:/gcc/mingw/4.8.1-x64/bin/../lib/gcc/x86_64-w64-mingw32/4.8.1/../../../../x86_64-w64-mingw32/lib/;d:/gcc/mingw/4.8.1-x64/bin/../lib/gcc/x86_64-w64-mingw32/4.8.1/../../../
-COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_072fe.exe' '-mtune=generic' '-march=x86-64'
- d:/gcc/mingw/4.8.1-x64/bin/../libexec/gcc/x86_64-w64-mingw32/4.8.1/collect2.exe -m i386pep --exclude-libs=libpthread.a -Bdynamic -o cmTC_072fe.exe d:/gcc/mingw/4.8.1-x64/bin/../lib/gcc/x86_64-w64-mingw32/4.8.1/../../../../x86_64-w64-mingw32/lib/../lib/crt2.o d:/gcc/mingw/4.8.1-x64/bin/../lib/gcc/x86_64-w64-mingw32/4.8.1/../../../../x86_64-w64-mingw32/lib/../lib/crtbegin.o -Ld:/gcc/mingw/4.8.1-x64/bin/../lib/gcc/x86_64-w64-mingw32/4.8.1 -Ld:/gcc/mingw/4.8.1-x64/bin/../lib/gcc -Ld:/gcc/mingw/4.8.1-x64/bin/../lib/gcc/x86_64-w64-mingw32/4.8.1/../../../../x86_64-w64-mingw32/lib/../lib -Ld:/gcc/mingw/4.8.1-x64/bin/../lib/gcc/x86_64-w64-mingw32/4.8.1/../../../../lib -Ld:/gcc/mingw/4.8.1-x64/bin/../lib/gcc/x86_64-w64-mingw32/4.8.1/../../../../x86_64-w64-mingw32/lib -Ld:/gcc/mingw/4.8.1-x64/bin/../lib/gcc/x86_64-w64-mingw32/4.8.1/../../.. --whole-archive CMakeFiles\cmTC_072fe.dir/objects.a --no-whole-archive --out-implib libcmTC_072fe.dll.a --major-image-version 0 --minor-image-version 0 -lmingw32 -lgcc -lmoldname -lmingwex -lmsvcrt -lpthread -ladvapi32 -lshell32 -luser32 -lkernel32 -lmingw32 -lgcc -lmoldname -lmingwex -lmsvcrt d:/gcc/mingw/4.8.1-x64/bin/../lib/gcc/x86_64-w64-mingw32/4.8.1/../../../../x86_64-w64-mingw32/lib/../lib/crtend.o
-mingw32-make.exe[1]: Leaving directory 'C:/Users/bmw/Desktop/Thesis_Being/NB_MAC_Scheduler_Prototype/Simulation/build/CMakeFiles/CMakeTmp'
+COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_ca77d.exe' '-mtune=generic' '-march=x86-64'
+ d:/gcc/mingw/4.8.1-x64/bin/../libexec/gcc/x86_64-w64-mingw32/4.8.1/collect2.exe -m i386pep --exclude-libs=libpthread.a -Bdynamic -o cmTC_ca77d.exe d:/gcc/mingw/4.8.1-x64/bin/../lib/gcc/x86_64-w64-mingw32/4.8.1/../../../../x86_64-w64-mingw32/lib/../lib/crt2.o d:/gcc/mingw/4.8.1-x64/bin/../lib/gcc/x86_64-w64-mingw32/4.8.1/../../../../x86_64-w64-mingw32/lib/../lib/crtbegin.o -Ld:/gcc/mingw/4.8.1-x64/bin/../lib/gcc/x86_64-w64-mingw32/4.8.1 -Ld:/gcc/mingw/4.8.1-x64/bin/../lib/gcc -Ld:/gcc/mingw/4.8.1-x64/bin/../lib/gcc/x86_64-w64-mingw32/4.8.1/../../../../x86_64-w64-mingw32/lib/../lib -Ld:/gcc/mingw/4.8.1-x64/bin/../lib/gcc/x86_64-w64-mingw32/4.8.1/../../../../lib -Ld:/gcc/mingw/4.8.1-x64/bin/../lib/gcc/x86_64-w64-mingw32/4.8.1/../../../../x86_64-w64-mingw32/lib -Ld:/gcc/mingw/4.8.1-x64/bin/../lib/gcc/x86_64-w64-mingw32/4.8.1/../../.. --whole-archive CMakeFiles\cmTC_ca77d.dir/objects.a --no-whole-archive --out-implib libcmTC_ca77d.dll.a --major-image-version 0 --minor-image-version 0 -lmingw32 -lgcc -lmoldname -lmingwex -lmsvcrt -lpthread -ladvapi32 -lshell32 -luser32 -lkernel32 -lmingw32 -lgcc -lmoldname -lmingwex -lmsvcrt d:/gcc/mingw/4.8.1-x64/bin/../lib/gcc/x86_64-w64-mingw32/4.8.1/../../../../x86_64-w64-mingw32/lib/../lib/crtend.o
+mingw32-make.exe[1]: Leaving directory 'C:/Users/bmw/Desktop/NB_UL_Scheduler_Prototype/Simulation/build/CMakeFiles/CMakeTmp'
 
 
 Parsed C implicit link information from above output:
   link line regex: [^( *|.*[/\])(ld\.exe|([^/\]+-)?ld|collect2)[^/\]*( |$)]
-  ignore line: [Change Dir: C:/Users/bmw/Desktop/Thesis_Being/NB_MAC_Scheduler_Prototype/Simulation/build/CMakeFiles/CMakeTmp]
+  ignore line: [Change Dir: C:/Users/bmw/Desktop/NB_UL_Scheduler_Prototype/Simulation/build/CMakeFiles/CMakeTmp]
   ignore line: []
-  ignore line: [Run Build Command:"D:/gcc/MinGW/4.8.1-x64/bin/mingw32-make.exe" "cmTC_072fe/fast"]
-  ignore line: [D:/gcc/MinGW/4.8.1-x64/bin/mingw32-make.exe -f CMakeFiles\cmTC_072fe.dir\build.make CMakeFiles/cmTC_072fe.dir/build]
-  ignore line: [mingw32-make.exe[1]: Entering directory 'C:/Users/bmw/Desktop/Thesis_Being/NB_MAC_Scheduler_Prototype/Simulation/build/CMakeFiles/CMakeTmp']
-  ignore line: [Building C object CMakeFiles/cmTC_072fe.dir/CMakeCCompilerABI.c.obj]
-  ignore line: [D:\gcc\MinGW\4.8.1-x64\bin\gcc.exe     -o CMakeFiles\cmTC_072fe.dir\CMakeCCompilerABI.c.obj   -c C:\Users\bmw\Downloads\cmake-3.7.1-win64-x64\cmake-3.7.1-win64-x64\share\cmake-3.7\Modules\CMakeCCompilerABI.c]
-  ignore line: [Linking C executable cmTC_072fe.exe]
-  ignore line: [C:\Users\bmw\Downloads\cmake-3.7.1-win64-x64\cmake-3.7.1-win64-x64\bin\cmake.exe -E cmake_link_script CMakeFiles\cmTC_072fe.dir\link.txt --verbose=1]
-  ignore line: [C:\Users\bmw\Downloads\cmake-3.7.1-win64-x64\cmake-3.7.1-win64-x64\bin\cmake.exe -E remove -f CMakeFiles\cmTC_072fe.dir/objects.a]
-  ignore line: [D:\gcc\MinGW\4.8.1-x64\bin\ar.exe cr CMakeFiles\cmTC_072fe.dir/objects.a @CMakeFiles\cmTC_072fe.dir\objects1.rsp]
-  ignore line: [D:\gcc\MinGW\4.8.1-x64\bin\gcc.exe      -v -Wl,--whole-archive CMakeFiles\cmTC_072fe.dir/objects.a -Wl,--no-whole-archive  -o cmTC_072fe.exe -Wl,--out-implib,libcmTC_072fe.dll.a -Wl,--major-image-version,0,--minor-image-version,0   ]
+  ignore line: [Run Build Command:"D:/gcc/MinGW/4.8.1-x64/bin/mingw32-make.exe" "cmTC_ca77d/fast"]
+  ignore line: [D:/gcc/MinGW/4.8.1-x64/bin/mingw32-make.exe -f CMakeFiles\cmTC_ca77d.dir\build.make CMakeFiles/cmTC_ca77d.dir/build]
+  ignore line: [mingw32-make.exe[1]: Entering directory 'C:/Users/bmw/Desktop/NB_UL_Scheduler_Prototype/Simulation/build/CMakeFiles/CMakeTmp']
+  ignore line: [Building C object CMakeFiles/cmTC_ca77d.dir/CMakeCCompilerABI.c.obj]
+  ignore line: [D:\gcc\MinGW\4.8.1-x64\bin\gcc.exe     -o CMakeFiles\cmTC_ca77d.dir\CMakeCCompilerABI.c.obj   -c C:\Users\bmw\Downloads\cmake-3.7.1-win64-x64\cmake-3.7.1-win64-x64\share\cmake-3.7\Modules\CMakeCCompilerABI.c]
+  ignore line: [Linking C executable cmTC_ca77d.exe]
+  ignore line: [C:\Users\bmw\Downloads\cmake-3.7.1-win64-x64\cmake-3.7.1-win64-x64\bin\cmake.exe -E cmake_link_script CMakeFiles\cmTC_ca77d.dir\link.txt --verbose=1]
+  ignore line: [C:\Users\bmw\Downloads\cmake-3.7.1-win64-x64\cmake-3.7.1-win64-x64\bin\cmake.exe -E remove -f CMakeFiles\cmTC_ca77d.dir/objects.a]
+  ignore line: [D:\gcc\MinGW\4.8.1-x64\bin\ar.exe cr CMakeFiles\cmTC_ca77d.dir/objects.a @CMakeFiles\cmTC_ca77d.dir\objects1.rsp]
+  ignore line: [D:\gcc\MinGW\4.8.1-x64\bin\gcc.exe      -v -Wl,--whole-archive CMakeFiles\cmTC_ca77d.dir/objects.a -Wl,--no-whole-archive  -o cmTC_ca77d.exe -Wl,--out-implib,libcmTC_ca77d.dll.a -Wl,--major-image-version,0,--minor-image-version,0   ]
   ignore line: [Using built-in specs.]
   ignore line: [COLLECT_GCC=D:\gcc\MinGW\4.8.1-x64\bin\gcc.exe]
   ignore line: [COLLECT_LTO_WRAPPER=d:/gcc/mingw/4.8.1-x64/bin/../libexec/gcc/x86_64-w64-mingw32/4.8.1/lto-wrapper.exe]
@@ -98,15 +98,15 @@ Parsed C implicit link information from above output:
   ignore line: [d:/gcc/mingw/4.8.1-x64/bin/../lib/gcc/x86_64-w64-mingw32/4.8.1/../../../../lib/]
   ignore line: [d:/gcc/mingw/4.8.1-x64/bin/../lib/gcc/x86_64-w64-mingw32/4.8.1/../../../../x86_64-w64-mingw32/lib/]
   ignore line: [d:/gcc/mingw/4.8.1-x64/bin/../lib/gcc/x86_64-w64-mingw32/4.8.1/../../../]
-  ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_072fe.exe' '-mtune=generic' '-march=x86-64']
-  link line: [ d:/gcc/mingw/4.8.1-x64/bin/../libexec/gcc/x86_64-w64-mingw32/4.8.1/collect2.exe -m i386pep --exclude-libs=libpthread.a -Bdynamic -o cmTC_072fe.exe d:/gcc/mingw/4.8.1-x64/bin/../lib/gcc/x86_64-w64-mingw32/4.8.1/../../../../x86_64-w64-mingw32/lib/../lib/crt2.o d:/gcc/mingw/4.8.1-x64/bin/../lib/gcc/x86_64-w64-mingw32/4.8.1/../../../../x86_64-w64-mingw32/lib/../lib/crtbegin.o -Ld:/gcc/mingw/4.8.1-x64/bin/../lib/gcc/x86_64-w64-mingw32/4.8.1 -Ld:/gcc/mingw/4.8.1-x64/bin/../lib/gcc -Ld:/gcc/mingw/4.8.1-x64/bin/../lib/gcc/x86_64-w64-mingw32/4.8.1/../../../../x86_64-w64-mingw32/lib/../lib -Ld:/gcc/mingw/4.8.1-x64/bin/../lib/gcc/x86_64-w64-mingw32/4.8.1/../../../../lib -Ld:/gcc/mingw/4.8.1-x64/bin/../lib/gcc/x86_64-w64-mingw32/4.8.1/../../../../x86_64-w64-mingw32/lib -Ld:/gcc/mingw/4.8.1-x64/bin/../lib/gcc/x86_64-w64-mingw32/4.8.1/../../.. --whole-archive CMakeFiles\cmTC_072fe.dir/objects.a --no-whole-archive --out-implib libcmTC_072fe.dll.a --major-image-version 0 --minor-image-version 0 -lmingw32 -lgcc -lmoldname -lmingwex -lmsvcrt -lpthread -ladvapi32 -lshell32 -luser32 -lkernel32 -lmingw32 -lgcc -lmoldname -lmingwex -lmsvcrt d:/gcc/mingw/4.8.1-x64/bin/../lib/gcc/x86_64-w64-mingw32/4.8.1/../../../../x86_64-w64-mingw32/lib/../lib/crtend.o]
+  ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_ca77d.exe' '-mtune=generic' '-march=x86-64']
+  link line: [ d:/gcc/mingw/4.8.1-x64/bin/../libexec/gcc/x86_64-w64-mingw32/4.8.1/collect2.exe -m i386pep --exclude-libs=libpthread.a -Bdynamic -o cmTC_ca77d.exe d:/gcc/mingw/4.8.1-x64/bin/../lib/gcc/x86_64-w64-mingw32/4.8.1/../../../../x86_64-w64-mingw32/lib/../lib/crt2.o d:/gcc/mingw/4.8.1-x64/bin/../lib/gcc/x86_64-w64-mingw32/4.8.1/../../../../x86_64-w64-mingw32/lib/../lib/crtbegin.o -Ld:/gcc/mingw/4.8.1-x64/bin/../lib/gcc/x86_64-w64-mingw32/4.8.1 -Ld:/gcc/mingw/4.8.1-x64/bin/../lib/gcc -Ld:/gcc/mingw/4.8.1-x64/bin/../lib/gcc/x86_64-w64-mingw32/4.8.1/../../../../x86_64-w64-mingw32/lib/../lib -Ld:/gcc/mingw/4.8.1-x64/bin/../lib/gcc/x86_64-w64-mingw32/4.8.1/../../../../lib -Ld:/gcc/mingw/4.8.1-x64/bin/../lib/gcc/x86_64-w64-mingw32/4.8.1/../../../../x86_64-w64-mingw32/lib -Ld:/gcc/mingw/4.8.1-x64/bin/../lib/gcc/x86_64-w64-mingw32/4.8.1/../../.. --whole-archive CMakeFiles\cmTC_ca77d.dir/objects.a --no-whole-archive --out-implib libcmTC_ca77d.dll.a --major-image-version 0 --minor-image-version 0 -lmingw32 -lgcc -lmoldname -lmingwex -lmsvcrt -lpthread -ladvapi32 -lshell32 -luser32 -lkernel32 -lmingw32 -lgcc -lmoldname -lmingwex -lmsvcrt d:/gcc/mingw/4.8.1-x64/bin/../lib/gcc/x86_64-w64-mingw32/4.8.1/../../../../x86_64-w64-mingw32/lib/../lib/crtend.o]
     arg [d:/gcc/mingw/4.8.1-x64/bin/../libexec/gcc/x86_64-w64-mingw32/4.8.1/collect2.exe] ==> ignore
     arg [-m] ==> ignore
     arg [i386pep] ==> ignore
     arg [--exclude-libs=libpthread.a] ==> ignore
     arg [-Bdynamic] ==> ignore
     arg [-o] ==> ignore
-    arg [cmTC_072fe.exe] ==> ignore
+    arg [cmTC_ca77d.exe] ==> ignore
     arg [d:/gcc/mingw/4.8.1-x64/bin/../lib/gcc/x86_64-w64-mingw32/4.8.1/../../../../x86_64-w64-mingw32/lib/../lib/crt2.o] ==> ignore
     arg [d:/gcc/mingw/4.8.1-x64/bin/../lib/gcc/x86_64-w64-mingw32/4.8.1/../../../../x86_64-w64-mingw32/lib/../lib/crtbegin.o] ==> ignore
     arg [-Ld:/gcc/mingw/4.8.1-x64/bin/../lib/gcc/x86_64-w64-mingw32/4.8.1] ==> dir [d:/gcc/mingw/4.8.1-x64/bin/../lib/gcc/x86_64-w64-mingw32/4.8.1]
@@ -116,10 +116,10 @@ Parsed C implicit link information from above output:
     arg [-Ld:/gcc/mingw/4.8.1-x64/bin/../lib/gcc/x86_64-w64-mingw32/4.8.1/../../../../x86_64-w64-mingw32/lib] ==> dir [d:/gcc/mingw/4.8.1-x64/bin/../lib/gcc/x86_64-w64-mingw32/4.8.1/../../../../x86_64-w64-mingw32/lib]
     arg [-Ld:/gcc/mingw/4.8.1-x64/bin/../lib/gcc/x86_64-w64-mingw32/4.8.1/../../..] ==> dir [d:/gcc/mingw/4.8.1-x64/bin/../lib/gcc/x86_64-w64-mingw32/4.8.1/../../..]
     arg [--whole-archive] ==> ignore
-    arg [CMakeFiles\cmTC_072fe.dir/objects.a] ==> ignore
+    arg [CMakeFiles\cmTC_ca77d.dir/objects.a] ==> ignore
     arg [--no-whole-archive] ==> ignore
     arg [--out-implib] ==> ignore
-    arg [libcmTC_072fe.dll.a] ==> ignore
+    arg [libcmTC_ca77d.dll.a] ==> ignore
     arg [--major-image-version] ==> ignore
     arg [0] ==> ignore
     arg [--minor-image-version] ==> ignore
@@ -156,19 +156,19 @@ Parsed C implicit link information from above output:
 
 
 Detecting C [-std=c11] compiler features compiled with the following output:
-Change Dir: C:/Users/bmw/Desktop/Thesis_Being/NB_MAC_Scheduler_Prototype/Simulation/build/CMakeFiles/CMakeTmp
+Change Dir: C:/Users/bmw/Desktop/NB_UL_Scheduler_Prototype/Simulation/build/CMakeFiles/CMakeTmp
 
-Run Build Command:"D:/gcc/MinGW/4.8.1-x64/bin/mingw32-make.exe" "cmTC_dc964/fast"
-D:/gcc/MinGW/4.8.1-x64/bin/mingw32-make.exe -f CMakeFiles\cmTC_dc964.dir\build.make CMakeFiles/cmTC_dc964.dir/build
-mingw32-make.exe[1]: Entering directory 'C:/Users/bmw/Desktop/Thesis_Being/NB_MAC_Scheduler_Prototype/Simulation/build/CMakeFiles/CMakeTmp'
-Building C object CMakeFiles/cmTC_dc964.dir/feature_tests.c.obj
-D:\gcc\MinGW\4.8.1-x64\bin\gcc.exe    -std=c11 -o CMakeFiles\cmTC_dc964.dir\feature_tests.c.obj   -c C:\Users\bmw\Desktop\Thesis_Being\NB_MAC_Scheduler_Prototype\Simulation\build\CMakeFiles\feature_tests.c
-Linking C executable cmTC_dc964.exe
-C:\Users\bmw\Downloads\cmake-3.7.1-win64-x64\cmake-3.7.1-win64-x64\bin\cmake.exe -E cmake_link_script CMakeFiles\cmTC_dc964.dir\link.txt --verbose=1
-C:\Users\bmw\Downloads\cmake-3.7.1-win64-x64\cmake-3.7.1-win64-x64\bin\cmake.exe -E remove -f CMakeFiles\cmTC_dc964.dir/objects.a
-D:\gcc\MinGW\4.8.1-x64\bin\ar.exe cr CMakeFiles\cmTC_dc964.dir/objects.a @CMakeFiles\cmTC_dc964.dir\objects1.rsp
-D:\gcc\MinGW\4.8.1-x64\bin\gcc.exe       -Wl,--whole-archive CMakeFiles\cmTC_dc964.dir/objects.a -Wl,--no-whole-archive  -o cmTC_dc964.exe -Wl,--out-implib,libcmTC_dc964.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles\cmTC_dc964.dir\linklibs.rsp
-mingw32-make.exe[1]: Leaving directory 'C:/Users/bmw/Desktop/Thesis_Being/NB_MAC_Scheduler_Prototype/Simulation/build/CMakeFiles/CMakeTmp'
+Run Build Command:"D:/gcc/MinGW/4.8.1-x64/bin/mingw32-make.exe" "cmTC_4cbb4/fast"
+D:/gcc/MinGW/4.8.1-x64/bin/mingw32-make.exe -f CMakeFiles\cmTC_4cbb4.dir\build.make CMakeFiles/cmTC_4cbb4.dir/build
+mingw32-make.exe[1]: Entering directory 'C:/Users/bmw/Desktop/NB_UL_Scheduler_Prototype/Simulation/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_4cbb4.dir/feature_tests.c.obj
+D:\gcc\MinGW\4.8.1-x64\bin\gcc.exe    -std=c11 -o CMakeFiles\cmTC_4cbb4.dir\feature_tests.c.obj   -c C:\Users\bmw\Desktop\NB_UL_Scheduler_Prototype\Simulation\build\CMakeFiles\feature_tests.c
+Linking C executable cmTC_4cbb4.exe
+C:\Users\bmw\Downloads\cmake-3.7.1-win64-x64\cmake-3.7.1-win64-x64\bin\cmake.exe -E cmake_link_script CMakeFiles\cmTC_4cbb4.dir\link.txt --verbose=1
+C:\Users\bmw\Downloads\cmake-3.7.1-win64-x64\cmake-3.7.1-win64-x64\bin\cmake.exe -E remove -f CMakeFiles\cmTC_4cbb4.dir/objects.a
+D:\gcc\MinGW\4.8.1-x64\bin\ar.exe cr CMakeFiles\cmTC_4cbb4.dir/objects.a @CMakeFiles\cmTC_4cbb4.dir\objects1.rsp
+D:\gcc\MinGW\4.8.1-x64\bin\gcc.exe       -Wl,--whole-archive CMakeFiles\cmTC_4cbb4.dir/objects.a -Wl,--no-whole-archive  -o cmTC_4cbb4.exe -Wl,--out-implib,libcmTC_4cbb4.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles\cmTC_4cbb4.dir\linklibs.rsp
+mingw32-make.exe[1]: Leaving directory 'C:/Users/bmw/Desktop/NB_UL_Scheduler_Prototype/Simulation/build/CMakeFiles/CMakeTmp'
 
 
     Feature record: C_FEATURE:1c_function_prototypes
@@ -178,19 +178,19 @@ mingw32-make.exe[1]: Leaving directory 'C:/Users/bmw/Desktop/Thesis_Being/NB_MAC
 
 
 Detecting C [-std=c99] compiler features compiled with the following output:
-Change Dir: C:/Users/bmw/Desktop/Thesis_Being/NB_MAC_Scheduler_Prototype/Simulation/build/CMakeFiles/CMakeTmp
+Change Dir: C:/Users/bmw/Desktop/NB_UL_Scheduler_Prototype/Simulation/build/CMakeFiles/CMakeTmp
 
-Run Build Command:"D:/gcc/MinGW/4.8.1-x64/bin/mingw32-make.exe" "cmTC_15916/fast"
-D:/gcc/MinGW/4.8.1-x64/bin/mingw32-make.exe -f CMakeFiles\cmTC_15916.dir\build.make CMakeFiles/cmTC_15916.dir/build
-mingw32-make.exe[1]: Entering directory 'C:/Users/bmw/Desktop/Thesis_Being/NB_MAC_Scheduler_Prototype/Simulation/build/CMakeFiles/CMakeTmp'
-Building C object CMakeFiles/cmTC_15916.dir/feature_tests.c.obj
-D:\gcc\MinGW\4.8.1-x64\bin\gcc.exe    -std=c99 -o CMakeFiles\cmTC_15916.dir\feature_tests.c.obj   -c C:\Users\bmw\Desktop\Thesis_Being\NB_MAC_Scheduler_Prototype\Simulation\build\CMakeFiles\feature_tests.c
-Linking C executable cmTC_15916.exe
-C:\Users\bmw\Downloads\cmake-3.7.1-win64-x64\cmake-3.7.1-win64-x64\bin\cmake.exe -E cmake_link_script CMakeFiles\cmTC_15916.dir\link.txt --verbose=1
-C:\Users\bmw\Downloads\cmake-3.7.1-win64-x64\cmake-3.7.1-win64-x64\bin\cmake.exe -E remove -f CMakeFiles\cmTC_15916.dir/objects.a
-D:\gcc\MinGW\4.8.1-x64\bin\ar.exe cr CMakeFiles\cmTC_15916.dir/objects.a @CMakeFiles\cmTC_15916.dir\objects1.rsp
-D:\gcc\MinGW\4.8.1-x64\bin\gcc.exe       -Wl,--whole-archive CMakeFiles\cmTC_15916.dir/objects.a -Wl,--no-whole-archive  -o cmTC_15916.exe -Wl,--out-implib,libcmTC_15916.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles\cmTC_15916.dir\linklibs.rsp
-mingw32-make.exe[1]: Leaving directory 'C:/Users/bmw/Desktop/Thesis_Being/NB_MAC_Scheduler_Prototype/Simulation/build/CMakeFiles/CMakeTmp'
+Run Build Command:"D:/gcc/MinGW/4.8.1-x64/bin/mingw32-make.exe" "cmTC_90eea/fast"
+D:/gcc/MinGW/4.8.1-x64/bin/mingw32-make.exe -f CMakeFiles\cmTC_90eea.dir\build.make CMakeFiles/cmTC_90eea.dir/build
+mingw32-make.exe[1]: Entering directory 'C:/Users/bmw/Desktop/NB_UL_Scheduler_Prototype/Simulation/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_90eea.dir/feature_tests.c.obj
+D:\gcc\MinGW\4.8.1-x64\bin\gcc.exe    -std=c99 -o CMakeFiles\cmTC_90eea.dir\feature_tests.c.obj   -c C:\Users\bmw\Desktop\NB_UL_Scheduler_Prototype\Simulation\build\CMakeFiles\feature_tests.c
+Linking C executable cmTC_90eea.exe
+C:\Users\bmw\Downloads\cmake-3.7.1-win64-x64\cmake-3.7.1-win64-x64\bin\cmake.exe -E cmake_link_script CMakeFiles\cmTC_90eea.dir\link.txt --verbose=1
+C:\Users\bmw\Downloads\cmake-3.7.1-win64-x64\cmake-3.7.1-win64-x64\bin\cmake.exe -E remove -f CMakeFiles\cmTC_90eea.dir/objects.a
+D:\gcc\MinGW\4.8.1-x64\bin\ar.exe cr CMakeFiles\cmTC_90eea.dir/objects.a @CMakeFiles\cmTC_90eea.dir\objects1.rsp
+D:\gcc\MinGW\4.8.1-x64\bin\gcc.exe       -Wl,--whole-archive CMakeFiles\cmTC_90eea.dir/objects.a -Wl,--no-whole-archive  -o cmTC_90eea.exe -Wl,--out-implib,libcmTC_90eea.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles\cmTC_90eea.dir\linklibs.rsp
+mingw32-make.exe[1]: Leaving directory 'C:/Users/bmw/Desktop/NB_UL_Scheduler_Prototype/Simulation/build/CMakeFiles/CMakeTmp'
 
 
     Feature record: C_FEATURE:1c_function_prototypes
@@ -200,19 +200,19 @@ mingw32-make.exe[1]: Leaving directory 'C:/Users/bmw/Desktop/Thesis_Being/NB_MAC
 
 
 Detecting C [-std=c90] compiler features compiled with the following output:
-Change Dir: C:/Users/bmw/Desktop/Thesis_Being/NB_MAC_Scheduler_Prototype/Simulation/build/CMakeFiles/CMakeTmp
+Change Dir: C:/Users/bmw/Desktop/NB_UL_Scheduler_Prototype/Simulation/build/CMakeFiles/CMakeTmp
 
-Run Build Command:"D:/gcc/MinGW/4.8.1-x64/bin/mingw32-make.exe" "cmTC_83b67/fast"
-D:/gcc/MinGW/4.8.1-x64/bin/mingw32-make.exe -f CMakeFiles\cmTC_83b67.dir\build.make CMakeFiles/cmTC_83b67.dir/build
-mingw32-make.exe[1]: Entering directory 'C:/Users/bmw/Desktop/Thesis_Being/NB_MAC_Scheduler_Prototype/Simulation/build/CMakeFiles/CMakeTmp'
-Building C object CMakeFiles/cmTC_83b67.dir/feature_tests.c.obj
-D:\gcc\MinGW\4.8.1-x64\bin\gcc.exe    -std=c90 -o CMakeFiles\cmTC_83b67.dir\feature_tests.c.obj   -c C:\Users\bmw\Desktop\Thesis_Being\NB_MAC_Scheduler_Prototype\Simulation\build\CMakeFiles\feature_tests.c
-Linking C executable cmTC_83b67.exe
-C:\Users\bmw\Downloads\cmake-3.7.1-win64-x64\cmake-3.7.1-win64-x64\bin\cmake.exe -E cmake_link_script CMakeFiles\cmTC_83b67.dir\link.txt --verbose=1
-C:\Users\bmw\Downloads\cmake-3.7.1-win64-x64\cmake-3.7.1-win64-x64\bin\cmake.exe -E remove -f CMakeFiles\cmTC_83b67.dir/objects.a
-D:\gcc\MinGW\4.8.1-x64\bin\ar.exe cr CMakeFiles\cmTC_83b67.dir/objects.a @CMakeFiles\cmTC_83b67.dir\objects1.rsp
-D:\gcc\MinGW\4.8.1-x64\bin\gcc.exe       -Wl,--whole-archive CMakeFiles\cmTC_83b67.dir/objects.a -Wl,--no-whole-archive  -o cmTC_83b67.exe -Wl,--out-implib,libcmTC_83b67.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles\cmTC_83b67.dir\linklibs.rsp
-mingw32-make.exe[1]: Leaving directory 'C:/Users/bmw/Desktop/Thesis_Being/NB_MAC_Scheduler_Prototype/Simulation/build/CMakeFiles/CMakeTmp'
+Run Build Command:"D:/gcc/MinGW/4.8.1-x64/bin/mingw32-make.exe" "cmTC_ea0ca/fast"
+D:/gcc/MinGW/4.8.1-x64/bin/mingw32-make.exe -f CMakeFiles\cmTC_ea0ca.dir\build.make CMakeFiles/cmTC_ea0ca.dir/build
+mingw32-make.exe[1]: Entering directory 'C:/Users/bmw/Desktop/NB_UL_Scheduler_Prototype/Simulation/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_ea0ca.dir/feature_tests.c.obj
+D:\gcc\MinGW\4.8.1-x64\bin\gcc.exe    -std=c90 -o CMakeFiles\cmTC_ea0ca.dir\feature_tests.c.obj   -c C:\Users\bmw\Desktop\NB_UL_Scheduler_Prototype\Simulation\build\CMakeFiles\feature_tests.c
+Linking C executable cmTC_ea0ca.exe
+C:\Users\bmw\Downloads\cmake-3.7.1-win64-x64\cmake-3.7.1-win64-x64\bin\cmake.exe -E cmake_link_script CMakeFiles\cmTC_ea0ca.dir\link.txt --verbose=1
+C:\Users\bmw\Downloads\cmake-3.7.1-win64-x64\cmake-3.7.1-win64-x64\bin\cmake.exe -E remove -f CMakeFiles\cmTC_ea0ca.dir/objects.a
+D:\gcc\MinGW\4.8.1-x64\bin\ar.exe cr CMakeFiles\cmTC_ea0ca.dir/objects.a @CMakeFiles\cmTC_ea0ca.dir\objects1.rsp
+D:\gcc\MinGW\4.8.1-x64\bin\gcc.exe       -Wl,--whole-archive CMakeFiles\cmTC_ea0ca.dir/objects.a -Wl,--no-whole-archive  -o cmTC_ea0ca.exe -Wl,--out-implib,libcmTC_ea0ca.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles\cmTC_ea0ca.dir\linklibs.rsp
+mingw32-make.exe[1]: Leaving directory 'C:/Users/bmw/Desktop/NB_UL_Scheduler_Prototype/Simulation/build/CMakeFiles/CMakeTmp'
 
 
     Feature record: C_FEATURE:1c_function_prototypes
@@ -220,34 +220,34 @@ mingw32-make.exe[1]: Leaving directory 'C:/Users/bmw/Desktop/Thesis_Being/NB_MAC
     Feature record: C_FEATURE:0c_static_assert
     Feature record: C_FEATURE:0c_variadic_macros
 Determining if the CXX compiler works passed with the following output:
-Change Dir: C:/Users/bmw/Desktop/Thesis_Being/NB_MAC_Scheduler_Prototype/Simulation/build/CMakeFiles/CMakeTmp
+Change Dir: C:/Users/bmw/Desktop/NB_UL_Scheduler_Prototype/Simulation/build/CMakeFiles/CMakeTmp
 
-Run Build Command:"D:/gcc/MinGW/4.8.1-x64/bin/mingw32-make.exe" "cmTC_40f8c/fast"
-D:/gcc/MinGW/4.8.1-x64/bin/mingw32-make.exe -f CMakeFiles\cmTC_40f8c.dir\build.make CMakeFiles/cmTC_40f8c.dir/build
-mingw32-make.exe[1]: Entering directory 'C:/Users/bmw/Desktop/Thesis_Being/NB_MAC_Scheduler_Prototype/Simulation/build/CMakeFiles/CMakeTmp'
-Building CXX object CMakeFiles/cmTC_40f8c.dir/testCXXCompiler.cxx.obj
-D:\gcc\MinGW\4.8.1-x64\bin\g++.exe      -o CMakeFiles\cmTC_40f8c.dir\testCXXCompiler.cxx.obj -c C:\Users\bmw\Desktop\Thesis_Being\NB_MAC_Scheduler_Prototype\Simulation\build\CMakeFiles\CMakeTmp\testCXXCompiler.cxx
-Linking CXX executable cmTC_40f8c.exe
-C:\Users\bmw\Downloads\cmake-3.7.1-win64-x64\cmake-3.7.1-win64-x64\bin\cmake.exe -E cmake_link_script CMakeFiles\cmTC_40f8c.dir\link.txt --verbose=1
-C:\Users\bmw\Downloads\cmake-3.7.1-win64-x64\cmake-3.7.1-win64-x64\bin\cmake.exe -E remove -f CMakeFiles\cmTC_40f8c.dir/objects.a
-D:\gcc\MinGW\4.8.1-x64\bin\ar.exe cr CMakeFiles\cmTC_40f8c.dir/objects.a @CMakeFiles\cmTC_40f8c.dir\objects1.rsp
-D:\gcc\MinGW\4.8.1-x64\bin\g++.exe       -Wl,--whole-archive CMakeFiles\cmTC_40f8c.dir/objects.a -Wl,--no-whole-archive  -o cmTC_40f8c.exe -Wl,--out-implib,libcmTC_40f8c.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles\cmTC_40f8c.dir\linklibs.rsp
-mingw32-make.exe[1]: Leaving directory 'C:/Users/bmw/Desktop/Thesis_Being/NB_MAC_Scheduler_Prototype/Simulation/build/CMakeFiles/CMakeTmp'
+Run Build Command:"D:/gcc/MinGW/4.8.1-x64/bin/mingw32-make.exe" "cmTC_cc864/fast"
+D:/gcc/MinGW/4.8.1-x64/bin/mingw32-make.exe -f CMakeFiles\cmTC_cc864.dir\build.make CMakeFiles/cmTC_cc864.dir/build
+mingw32-make.exe[1]: Entering directory 'C:/Users/bmw/Desktop/NB_UL_Scheduler_Prototype/Simulation/build/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_cc864.dir/testCXXCompiler.cxx.obj
+D:\gcc\MinGW\4.8.1-x64\bin\g++.exe      -o CMakeFiles\cmTC_cc864.dir\testCXXCompiler.cxx.obj -c C:\Users\bmw\Desktop\NB_UL_Scheduler_Prototype\Simulation\build\CMakeFiles\CMakeTmp\testCXXCompiler.cxx
+Linking CXX executable cmTC_cc864.exe
+C:\Users\bmw\Downloads\cmake-3.7.1-win64-x64\cmake-3.7.1-win64-x64\bin\cmake.exe -E cmake_link_script CMakeFiles\cmTC_cc864.dir\link.txt --verbose=1
+C:\Users\bmw\Downloads\cmake-3.7.1-win64-x64\cmake-3.7.1-win64-x64\bin\cmake.exe -E remove -f CMakeFiles\cmTC_cc864.dir/objects.a
+D:\gcc\MinGW\4.8.1-x64\bin\ar.exe cr CMakeFiles\cmTC_cc864.dir/objects.a @CMakeFiles\cmTC_cc864.dir\objects1.rsp
+D:\gcc\MinGW\4.8.1-x64\bin\g++.exe       -Wl,--whole-archive CMakeFiles\cmTC_cc864.dir/objects.a -Wl,--no-whole-archive  -o cmTC_cc864.exe -Wl,--out-implib,libcmTC_cc864.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles\cmTC_cc864.dir\linklibs.rsp
+mingw32-make.exe[1]: Leaving directory 'C:/Users/bmw/Desktop/NB_UL_Scheduler_Prototype/Simulation/build/CMakeFiles/CMakeTmp'
 
 
 Detecting CXX compiler ABI info compiled with the following output:
-Change Dir: C:/Users/bmw/Desktop/Thesis_Being/NB_MAC_Scheduler_Prototype/Simulation/build/CMakeFiles/CMakeTmp
+Change Dir: C:/Users/bmw/Desktop/NB_UL_Scheduler_Prototype/Simulation/build/CMakeFiles/CMakeTmp
 
-Run Build Command:"D:/gcc/MinGW/4.8.1-x64/bin/mingw32-make.exe" "cmTC_e67e4/fast"
-D:/gcc/MinGW/4.8.1-x64/bin/mingw32-make.exe -f CMakeFiles\cmTC_e67e4.dir\build.make CMakeFiles/cmTC_e67e4.dir/build
-mingw32-make.exe[1]: Entering directory 'C:/Users/bmw/Desktop/Thesis_Being/NB_MAC_Scheduler_Prototype/Simulation/build/CMakeFiles/CMakeTmp'
-Building CXX object CMakeFiles/cmTC_e67e4.dir/CMakeCXXCompilerABI.cpp.obj
-D:\gcc\MinGW\4.8.1-x64\bin\g++.exe      -o CMakeFiles\cmTC_e67e4.dir\CMakeCXXCompilerABI.cpp.obj -c C:\Users\bmw\Downloads\cmake-3.7.1-win64-x64\cmake-3.7.1-win64-x64\share\cmake-3.7\Modules\CMakeCXXCompilerABI.cpp
-Linking CXX executable cmTC_e67e4.exe
-C:\Users\bmw\Downloads\cmake-3.7.1-win64-x64\cmake-3.7.1-win64-x64\bin\cmake.exe -E cmake_link_script CMakeFiles\cmTC_e67e4.dir\link.txt --verbose=1
-C:\Users\bmw\Downloads\cmake-3.7.1-win64-x64\cmake-3.7.1-win64-x64\bin\cmake.exe -E remove -f CMakeFiles\cmTC_e67e4.dir/objects.a
-D:\gcc\MinGW\4.8.1-x64\bin\ar.exe cr CMakeFiles\cmTC_e67e4.dir/objects.a @CMakeFiles\cmTC_e67e4.dir\objects1.rsp
-D:\gcc\MinGW\4.8.1-x64\bin\g++.exe      -v -Wl,--whole-archive CMakeFiles\cmTC_e67e4.dir/objects.a -Wl,--no-whole-archive  -o cmTC_e67e4.exe -Wl,--out-implib,libcmTC_e67e4.dll.a -Wl,--major-image-version,0,--minor-image-version,0   
+Run Build Command:"D:/gcc/MinGW/4.8.1-x64/bin/mingw32-make.exe" "cmTC_6d8a5/fast"
+D:/gcc/MinGW/4.8.1-x64/bin/mingw32-make.exe -f CMakeFiles\cmTC_6d8a5.dir\build.make CMakeFiles/cmTC_6d8a5.dir/build
+mingw32-make.exe[1]: Entering directory 'C:/Users/bmw/Desktop/NB_UL_Scheduler_Prototype/Simulation/build/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_6d8a5.dir/CMakeCXXCompilerABI.cpp.obj
+D:\gcc\MinGW\4.8.1-x64\bin\g++.exe      -o CMakeFiles\cmTC_6d8a5.dir\CMakeCXXCompilerABI.cpp.obj -c C:\Users\bmw\Downloads\cmake-3.7.1-win64-x64\cmake-3.7.1-win64-x64\share\cmake-3.7\Modules\CMakeCXXCompilerABI.cpp
+Linking CXX executable cmTC_6d8a5.exe
+C:\Users\bmw\Downloads\cmake-3.7.1-win64-x64\cmake-3.7.1-win64-x64\bin\cmake.exe -E cmake_link_script CMakeFiles\cmTC_6d8a5.dir\link.txt --verbose=1
+C:\Users\bmw\Downloads\cmake-3.7.1-win64-x64\cmake-3.7.1-win64-x64\bin\cmake.exe -E remove -f CMakeFiles\cmTC_6d8a5.dir/objects.a
+D:\gcc\MinGW\4.8.1-x64\bin\ar.exe cr CMakeFiles\cmTC_6d8a5.dir/objects.a @CMakeFiles\cmTC_6d8a5.dir\objects1.rsp
+D:\gcc\MinGW\4.8.1-x64\bin\g++.exe      -v -Wl,--whole-archive CMakeFiles\cmTC_6d8a5.dir/objects.a -Wl,--no-whole-archive  -o cmTC_6d8a5.exe -Wl,--out-implib,libcmTC_6d8a5.dll.a -Wl,--major-image-version,0,--minor-image-version,0   
 Using built-in specs.
 COLLECT_GCC=D:\gcc\MinGW\4.8.1-x64\bin\g++.exe
 COLLECT_LTO_WRAPPER=d:/gcc/mingw/4.8.1-x64/bin/../libexec/gcc/x86_64-w64-mingw32/4.8.1/lto-wrapper.exe
@@ -257,25 +257,25 @@ Thread model: posix
 gcc version 4.8.1 (tdm64-2) 
 COMPILER_PATH=d:/gcc/mingw/4.8.1-x64/bin/../libexec/gcc/x86_64-w64-mingw32/4.8.1/;d:/gcc/mingw/4.8.1-x64/bin/../libexec/gcc/;d:/gcc/mingw/4.8.1-x64/bin/../lib/gcc/x86_64-w64-mingw32/4.8.1/../../../../x86_64-w64-mingw32/bin/
 LIBRARY_PATH=d:/gcc/mingw/4.8.1-x64/bin/../lib/gcc/x86_64-w64-mingw32/4.8.1/;d:/gcc/mingw/4.8.1-x64/bin/../lib/gcc/;d:/gcc/mingw/4.8.1-x64/bin/../lib/gcc/x86_64-w64-mingw32/4.8.1/../../../../x86_64-w64-mingw32/lib/../lib/;d:/gcc/mingw/4.8.1-x64/bin/../lib/gcc/x86_64-w64-mingw32/4.8.1/../../../../lib/;d:/gcc/mingw/4.8.1-x64/bin/../lib/gcc/x86_64-w64-mingw32/4.8.1/../../../../x86_64-w64-mingw32/lib/;d:/gcc/mingw/4.8.1-x64/bin/../lib/gcc/x86_64-w64-mingw32/4.8.1/../../../
-COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_e67e4.exe' '-mtune=generic' '-march=x86-64'
- d:/gcc/mingw/4.8.1-x64/bin/../libexec/gcc/x86_64-w64-mingw32/4.8.1/collect2.exe -m i386pep --exclude-libs=libpthread.a -Bdynamic -o cmTC_e67e4.exe d:/gcc/mingw/4.8.1-x64/bin/../lib/gcc/x86_64-w64-mingw32/4.8.1/../../../../x86_64-w64-mingw32/lib/../lib/crt2.o d:/gcc/mingw/4.8.1-x64/bin/../lib/gcc/x86_64-w64-mingw32/4.8.1/../../../../x86_64-w64-mingw32/lib/../lib/crtbegin.o -Ld:/gcc/mingw/4.8.1-x64/bin/../lib/gcc/x86_64-w64-mingw32/4.8.1 -Ld:/gcc/mingw/4.8.1-x64/bin/../lib/gcc -Ld:/gcc/mingw/4.8.1-x64/bin/../lib/gcc/x86_64-w64-mingw32/4.8.1/../../../../x86_64-w64-mingw32/lib/../lib -Ld:/gcc/mingw/4.8.1-x64/bin/../lib/gcc/x86_64-w64-mingw32/4.8.1/../../../../lib -Ld:/gcc/mingw/4.8.1-x64/bin/../lib/gcc/x86_64-w64-mingw32/4.8.1/../../../../x86_64-w64-mingw32/lib -Ld:/gcc/mingw/4.8.1-x64/bin/../lib/gcc/x86_64-w64-mingw32/4.8.1/../../.. --whole-archive CMakeFiles\cmTC_e67e4.dir/objects.a --no-whole-archive --out-implib libcmTC_e67e4.dll.a --major-image-version 0 --minor-image-version 0 -Bstatic -lstdc++ -Bdynamic -lmingw32 -lgcc -lmoldname -lmingwex -lmsvcrt -lpthread -ladvapi32 -lshell32 -luser32 -lkernel32 -lmingw32 -lgcc -lmoldname -lmingwex -lmsvcrt d:/gcc/mingw/4.8.1-x64/bin/../lib/gcc/x86_64-w64-mingw32/4.8.1/../../../../x86_64-w64-mingw32/lib/../lib/crtend.o
-mingw32-make.exe[1]: Leaving directory 'C:/Users/bmw/Desktop/Thesis_Being/NB_MAC_Scheduler_Prototype/Simulation/build/CMakeFiles/CMakeTmp'
+COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_6d8a5.exe' '-mtune=generic' '-march=x86-64'
+ d:/gcc/mingw/4.8.1-x64/bin/../libexec/gcc/x86_64-w64-mingw32/4.8.1/collect2.exe -m i386pep --exclude-libs=libpthread.a -Bdynamic -o cmTC_6d8a5.exe d:/gcc/mingw/4.8.1-x64/bin/../lib/gcc/x86_64-w64-mingw32/4.8.1/../../../../x86_64-w64-mingw32/lib/../lib/crt2.o d:/gcc/mingw/4.8.1-x64/bin/../lib/gcc/x86_64-w64-mingw32/4.8.1/../../../../x86_64-w64-mingw32/lib/../lib/crtbegin.o -Ld:/gcc/mingw/4.8.1-x64/bin/../lib/gcc/x86_64-w64-mingw32/4.8.1 -Ld:/gcc/mingw/4.8.1-x64/bin/../lib/gcc -Ld:/gcc/mingw/4.8.1-x64/bin/../lib/gcc/x86_64-w64-mingw32/4.8.1/../../../../x86_64-w64-mingw32/lib/../lib -Ld:/gcc/mingw/4.8.1-x64/bin/../lib/gcc/x86_64-w64-mingw32/4.8.1/../../../../lib -Ld:/gcc/mingw/4.8.1-x64/bin/../lib/gcc/x86_64-w64-mingw32/4.8.1/../../../../x86_64-w64-mingw32/lib -Ld:/gcc/mingw/4.8.1-x64/bin/../lib/gcc/x86_64-w64-mingw32/4.8.1/../../.. --whole-archive CMakeFiles\cmTC_6d8a5.dir/objects.a --no-whole-archive --out-implib libcmTC_6d8a5.dll.a --major-image-version 0 --minor-image-version 0 -Bstatic -lstdc++ -Bdynamic -lmingw32 -lgcc -lmoldname -lmingwex -lmsvcrt -lpthread -ladvapi32 -lshell32 -luser32 -lkernel32 -lmingw32 -lgcc -lmoldname -lmingwex -lmsvcrt d:/gcc/mingw/4.8.1-x64/bin/../lib/gcc/x86_64-w64-mingw32/4.8.1/../../../../x86_64-w64-mingw32/lib/../lib/crtend.o
+mingw32-make.exe[1]: Leaving directory 'C:/Users/bmw/Desktop/NB_UL_Scheduler_Prototype/Simulation/build/CMakeFiles/CMakeTmp'
 
 
 Parsed CXX implicit link information from above output:
   link line regex: [^( *|.*[/\])(ld\.exe|([^/\]+-)?ld|collect2)[^/\]*( |$)]
-  ignore line: [Change Dir: C:/Users/bmw/Desktop/Thesis_Being/NB_MAC_Scheduler_Prototype/Simulation/build/CMakeFiles/CMakeTmp]
+  ignore line: [Change Dir: C:/Users/bmw/Desktop/NB_UL_Scheduler_Prototype/Simulation/build/CMakeFiles/CMakeTmp]
   ignore line: []
-  ignore line: [Run Build Command:"D:/gcc/MinGW/4.8.1-x64/bin/mingw32-make.exe" "cmTC_e67e4/fast"]
-  ignore line: [D:/gcc/MinGW/4.8.1-x64/bin/mingw32-make.exe -f CMakeFiles\cmTC_e67e4.dir\build.make CMakeFiles/cmTC_e67e4.dir/build]
-  ignore line: [mingw32-make.exe[1]: Entering directory 'C:/Users/bmw/Desktop/Thesis_Being/NB_MAC_Scheduler_Prototype/Simulation/build/CMakeFiles/CMakeTmp']
-  ignore line: [Building CXX object CMakeFiles/cmTC_e67e4.dir/CMakeCXXCompilerABI.cpp.obj]
-  ignore line: [D:\gcc\MinGW\4.8.1-x64\bin\g++.exe      -o CMakeFiles\cmTC_e67e4.dir\CMakeCXXCompilerABI.cpp.obj -c C:\Users\bmw\Downloads\cmake-3.7.1-win64-x64\cmake-3.7.1-win64-x64\share\cmake-3.7\Modules\CMakeCXXCompilerABI.cpp]
-  ignore line: [Linking CXX executable cmTC_e67e4.exe]
-  ignore line: [C:\Users\bmw\Downloads\cmake-3.7.1-win64-x64\cmake-3.7.1-win64-x64\bin\cmake.exe -E cmake_link_script CMakeFiles\cmTC_e67e4.dir\link.txt --verbose=1]
-  ignore line: [C:\Users\bmw\Downloads\cmake-3.7.1-win64-x64\cmake-3.7.1-win64-x64\bin\cmake.exe -E remove -f CMakeFiles\cmTC_e67e4.dir/objects.a]
-  ignore line: [D:\gcc\MinGW\4.8.1-x64\bin\ar.exe cr CMakeFiles\cmTC_e67e4.dir/objects.a @CMakeFiles\cmTC_e67e4.dir\objects1.rsp]
-  ignore line: [D:\gcc\MinGW\4.8.1-x64\bin\g++.exe      -v -Wl,--whole-archive CMakeFiles\cmTC_e67e4.dir/objects.a -Wl,--no-whole-archive  -o cmTC_e67e4.exe -Wl,--out-implib,libcmTC_e67e4.dll.a -Wl,--major-image-version,0,--minor-image-version,0   ]
+  ignore line: [Run Build Command:"D:/gcc/MinGW/4.8.1-x64/bin/mingw32-make.exe" "cmTC_6d8a5/fast"]
+  ignore line: [D:/gcc/MinGW/4.8.1-x64/bin/mingw32-make.exe -f CMakeFiles\cmTC_6d8a5.dir\build.make CMakeFiles/cmTC_6d8a5.dir/build]
+  ignore line: [mingw32-make.exe[1]: Entering directory 'C:/Users/bmw/Desktop/NB_UL_Scheduler_Prototype/Simulation/build/CMakeFiles/CMakeTmp']
+  ignore line: [Building CXX object CMakeFiles/cmTC_6d8a5.dir/CMakeCXXCompilerABI.cpp.obj]
+  ignore line: [D:\gcc\MinGW\4.8.1-x64\bin\g++.exe      -o CMakeFiles\cmTC_6d8a5.dir\CMakeCXXCompilerABI.cpp.obj -c C:\Users\bmw\Downloads\cmake-3.7.1-win64-x64\cmake-3.7.1-win64-x64\share\cmake-3.7\Modules\CMakeCXXCompilerABI.cpp]
+  ignore line: [Linking CXX executable cmTC_6d8a5.exe]
+  ignore line: [C:\Users\bmw\Downloads\cmake-3.7.1-win64-x64\cmake-3.7.1-win64-x64\bin\cmake.exe -E cmake_link_script CMakeFiles\cmTC_6d8a5.dir\link.txt --verbose=1]
+  ignore line: [C:\Users\bmw\Downloads\cmake-3.7.1-win64-x64\cmake-3.7.1-win64-x64\bin\cmake.exe -E remove -f CMakeFiles\cmTC_6d8a5.dir/objects.a]
+  ignore line: [D:\gcc\MinGW\4.8.1-x64\bin\ar.exe cr CMakeFiles\cmTC_6d8a5.dir/objects.a @CMakeFiles\cmTC_6d8a5.dir\objects1.rsp]
+  ignore line: [D:\gcc\MinGW\4.8.1-x64\bin\g++.exe      -v -Wl,--whole-archive CMakeFiles\cmTC_6d8a5.dir/objects.a -Wl,--no-whole-archive  -o cmTC_6d8a5.exe -Wl,--out-implib,libcmTC_6d8a5.dll.a -Wl,--major-image-version,0,--minor-image-version,0   ]
   ignore line: [Using built-in specs.]
   ignore line: [COLLECT_GCC=D:\gcc\MinGW\4.8.1-x64\bin\g++.exe]
   ignore line: [COLLECT_LTO_WRAPPER=d:/gcc/mingw/4.8.1-x64/bin/../libexec/gcc/x86_64-w64-mingw32/4.8.1/lto-wrapper.exe]
@@ -292,15 +292,15 @@ Parsed CXX implicit link information from above output:
   ignore line: [d:/gcc/mingw/4.8.1-x64/bin/../lib/gcc/x86_64-w64-mingw32/4.8.1/../../../../lib/]
   ignore line: [d:/gcc/mingw/4.8.1-x64/bin/../lib/gcc/x86_64-w64-mingw32/4.8.1/../../../../x86_64-w64-mingw32/lib/]
   ignore line: [d:/gcc/mingw/4.8.1-x64/bin/../lib/gcc/x86_64-w64-mingw32/4.8.1/../../../]
-  ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_e67e4.exe' '-mtune=generic' '-march=x86-64']
-  link line: [ d:/gcc/mingw/4.8.1-x64/bin/../libexec/gcc/x86_64-w64-mingw32/4.8.1/collect2.exe -m i386pep --exclude-libs=libpthread.a -Bdynamic -o cmTC_e67e4.exe d:/gcc/mingw/4.8.1-x64/bin/../lib/gcc/x86_64-w64-mingw32/4.8.1/../../../../x86_64-w64-mingw32/lib/../lib/crt2.o d:/gcc/mingw/4.8.1-x64/bin/../lib/gcc/x86_64-w64-mingw32/4.8.1/../../../../x86_64-w64-mingw32/lib/../lib/crtbegin.o -Ld:/gcc/mingw/4.8.1-x64/bin/../lib/gcc/x86_64-w64-mingw32/4.8.1 -Ld:/gcc/mingw/4.8.1-x64/bin/../lib/gcc -Ld:/gcc/mingw/4.8.1-x64/bin/../lib/gcc/x86_64-w64-mingw32/4.8.1/../../../../x86_64-w64-mingw32/lib/../lib -Ld:/gcc/mingw/4.8.1-x64/bin/../lib/gcc/x86_64-w64-mingw32/4.8.1/../../../../lib -Ld:/gcc/mingw/4.8.1-x64/bin/../lib/gcc/x86_64-w64-mingw32/4.8.1/../../../../x86_64-w64-mingw32/lib -Ld:/gcc/mingw/4.8.1-x64/bin/../lib/gcc/x86_64-w64-mingw32/4.8.1/../../.. --whole-archive CMakeFiles\cmTC_e67e4.dir/objects.a --no-whole-archive --out-implib libcmTC_e67e4.dll.a --major-image-version 0 --minor-image-version 0 -Bstatic -lstdc++ -Bdynamic -lmingw32 -lgcc -lmoldname -lmingwex -lmsvcrt -lpthread -ladvapi32 -lshell32 -luser32 -lkernel32 -lmingw32 -lgcc -lmoldname -lmingwex -lmsvcrt d:/gcc/mingw/4.8.1-x64/bin/../lib/gcc/x86_64-w64-mingw32/4.8.1/../../../../x86_64-w64-mingw32/lib/../lib/crtend.o]
+  ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_6d8a5.exe' '-mtune=generic' '-march=x86-64']
+  link line: [ d:/gcc/mingw/4.8.1-x64/bin/../libexec/gcc/x86_64-w64-mingw32/4.8.1/collect2.exe -m i386pep --exclude-libs=libpthread.a -Bdynamic -o cmTC_6d8a5.exe d:/gcc/mingw/4.8.1-x64/bin/../lib/gcc/x86_64-w64-mingw32/4.8.1/../../../../x86_64-w64-mingw32/lib/../lib/crt2.o d:/gcc/mingw/4.8.1-x64/bin/../lib/gcc/x86_64-w64-mingw32/4.8.1/../../../../x86_64-w64-mingw32/lib/../lib/crtbegin.o -Ld:/gcc/mingw/4.8.1-x64/bin/../lib/gcc/x86_64-w64-mingw32/4.8.1 -Ld:/gcc/mingw/4.8.1-x64/bin/../lib/gcc -Ld:/gcc/mingw/4.8.1-x64/bin/../lib/gcc/x86_64-w64-mingw32/4.8.1/../../../../x86_64-w64-mingw32/lib/../lib -Ld:/gcc/mingw/4.8.1-x64/bin/../lib/gcc/x86_64-w64-mingw32/4.8.1/../../../../lib -Ld:/gcc/mingw/4.8.1-x64/bin/../lib/gcc/x86_64-w64-mingw32/4.8.1/../../../../x86_64-w64-mingw32/lib -Ld:/gcc/mingw/4.8.1-x64/bin/../lib/gcc/x86_64-w64-mingw32/4.8.1/../../.. --whole-archive CMakeFiles\cmTC_6d8a5.dir/objects.a --no-whole-archive --out-implib libcmTC_6d8a5.dll.a --major-image-version 0 --minor-image-version 0 -Bstatic -lstdc++ -Bdynamic -lmingw32 -lgcc -lmoldname -lmingwex -lmsvcrt -lpthread -ladvapi32 -lshell32 -luser32 -lkernel32 -lmingw32 -lgcc -lmoldname -lmingwex -lmsvcrt d:/gcc/mingw/4.8.1-x64/bin/../lib/gcc/x86_64-w64-mingw32/4.8.1/../../../../x86_64-w64-mingw32/lib/../lib/crtend.o]
     arg [d:/gcc/mingw/4.8.1-x64/bin/../libexec/gcc/x86_64-w64-mingw32/4.8.1/collect2.exe] ==> ignore
     arg [-m] ==> ignore
     arg [i386pep] ==> ignore
     arg [--exclude-libs=libpthread.a] ==> ignore
     arg [-Bdynamic] ==> ignore
     arg [-o] ==> ignore
-    arg [cmTC_e67e4.exe] ==> ignore
+    arg [cmTC_6d8a5.exe] ==> ignore
     arg [d:/gcc/mingw/4.8.1-x64/bin/../lib/gcc/x86_64-w64-mingw32/4.8.1/../../../../x86_64-w64-mingw32/lib/../lib/crt2.o] ==> ignore
     arg [d:/gcc/mingw/4.8.1-x64/bin/../lib/gcc/x86_64-w64-mingw32/4.8.1/../../../../x86_64-w64-mingw32/lib/../lib/crtbegin.o] ==> ignore
     arg [-Ld:/gcc/mingw/4.8.1-x64/bin/../lib/gcc/x86_64-w64-mingw32/4.8.1] ==> dir [d:/gcc/mingw/4.8.1-x64/bin/../lib/gcc/x86_64-w64-mingw32/4.8.1]
@@ -310,10 +310,10 @@ Parsed CXX implicit link information from above output:
     arg [-Ld:/gcc/mingw/4.8.1-x64/bin/../lib/gcc/x86_64-w64-mingw32/4.8.1/../../../../x86_64-w64-mingw32/lib] ==> dir [d:/gcc/mingw/4.8.1-x64/bin/../lib/gcc/x86_64-w64-mingw32/4.8.1/../../../../x86_64-w64-mingw32/lib]
     arg [-Ld:/gcc/mingw/4.8.1-x64/bin/../lib/gcc/x86_64-w64-mingw32/4.8.1/../../..] ==> dir [d:/gcc/mingw/4.8.1-x64/bin/../lib/gcc/x86_64-w64-mingw32/4.8.1/../../..]
     arg [--whole-archive] ==> ignore
-    arg [CMakeFiles\cmTC_e67e4.dir/objects.a] ==> ignore
+    arg [CMakeFiles\cmTC_6d8a5.dir/objects.a] ==> ignore
     arg [--no-whole-archive] ==> ignore
     arg [--out-implib] ==> ignore
-    arg [libcmTC_e67e4.dll.a] ==> ignore
+    arg [libcmTC_6d8a5.dll.a] ==> ignore
     arg [--major-image-version] ==> ignore
     arg [0] ==> ignore
     arg [--minor-image-version] ==> ignore
@@ -353,19 +353,19 @@ Parsed CXX implicit link information from above output:
 
 
 Detecting CXX [-std=c++1y] compiler features compiled with the following output:
-Change Dir: C:/Users/bmw/Desktop/Thesis_Being/NB_MAC_Scheduler_Prototype/Simulation/build/CMakeFiles/CMakeTmp
+Change Dir: C:/Users/bmw/Desktop/NB_UL_Scheduler_Prototype/Simulation/build/CMakeFiles/CMakeTmp
 
-Run Build Command:"D:/gcc/MinGW/4.8.1-x64/bin/mingw32-make.exe" "cmTC_8e90a/fast"
-D:/gcc/MinGW/4.8.1-x64/bin/mingw32-make.exe -f CMakeFiles\cmTC_8e90a.dir\build.make CMakeFiles/cmTC_8e90a.dir/build
-mingw32-make.exe[1]: Entering directory 'C:/Users/bmw/Desktop/Thesis_Being/NB_MAC_Scheduler_Prototype/Simulation/build/CMakeFiles/CMakeTmp'
-Building CXX object CMakeFiles/cmTC_8e90a.dir/feature_tests.cxx.obj
-D:\gcc\MinGW\4.8.1-x64\bin\g++.exe     -std=c++1y -o CMakeFiles\cmTC_8e90a.dir\feature_tests.cxx.obj -c C:\Users\bmw\Desktop\Thesis_Being\NB_MAC_Scheduler_Prototype\Simulation\build\CMakeFiles\feature_tests.cxx
-Linking CXX executable cmTC_8e90a.exe
-C:\Users\bmw\Downloads\cmake-3.7.1-win64-x64\cmake-3.7.1-win64-x64\bin\cmake.exe -E cmake_link_script CMakeFiles\cmTC_8e90a.dir\link.txt --verbose=1
-C:\Users\bmw\Downloads\cmake-3.7.1-win64-x64\cmake-3.7.1-win64-x64\bin\cmake.exe -E remove -f CMakeFiles\cmTC_8e90a.dir/objects.a
-D:\gcc\MinGW\4.8.1-x64\bin\ar.exe cr CMakeFiles\cmTC_8e90a.dir/objects.a @CMakeFiles\cmTC_8e90a.dir\objects1.rsp
-D:\gcc\MinGW\4.8.1-x64\bin\g++.exe       -Wl,--whole-archive CMakeFiles\cmTC_8e90a.dir/objects.a -Wl,--no-whole-archive  -o cmTC_8e90a.exe -Wl,--out-implib,libcmTC_8e90a.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles\cmTC_8e90a.dir\linklibs.rsp
-mingw32-make.exe[1]: Leaving directory 'C:/Users/bmw/Desktop/Thesis_Being/NB_MAC_Scheduler_Prototype/Simulation/build/CMakeFiles/CMakeTmp'
+Run Build Command:"D:/gcc/MinGW/4.8.1-x64/bin/mingw32-make.exe" "cmTC_94f55/fast"
+D:/gcc/MinGW/4.8.1-x64/bin/mingw32-make.exe -f CMakeFiles\cmTC_94f55.dir\build.make CMakeFiles/cmTC_94f55.dir/build
+mingw32-make.exe[1]: Entering directory 'C:/Users/bmw/Desktop/NB_UL_Scheduler_Prototype/Simulation/build/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_94f55.dir/feature_tests.cxx.obj
+D:\gcc\MinGW\4.8.1-x64\bin\g++.exe     -std=c++1y -o CMakeFiles\cmTC_94f55.dir\feature_tests.cxx.obj -c C:\Users\bmw\Desktop\NB_UL_Scheduler_Prototype\Simulation\build\CMakeFiles\feature_tests.cxx
+Linking CXX executable cmTC_94f55.exe
+C:\Users\bmw\Downloads\cmake-3.7.1-win64-x64\cmake-3.7.1-win64-x64\bin\cmake.exe -E cmake_link_script CMakeFiles\cmTC_94f55.dir\link.txt --verbose=1
+C:\Users\bmw\Downloads\cmake-3.7.1-win64-x64\cmake-3.7.1-win64-x64\bin\cmake.exe -E remove -f CMakeFiles\cmTC_94f55.dir/objects.a
+D:\gcc\MinGW\4.8.1-x64\bin\ar.exe cr CMakeFiles\cmTC_94f55.dir/objects.a @CMakeFiles\cmTC_94f55.dir\objects1.rsp
+D:\gcc\MinGW\4.8.1-x64\bin\g++.exe       -Wl,--whole-archive CMakeFiles\cmTC_94f55.dir/objects.a -Wl,--no-whole-archive  -o cmTC_94f55.exe -Wl,--out-implib,libcmTC_94f55.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles\cmTC_94f55.dir\linklibs.rsp
+mingw32-make.exe[1]: Leaving directory 'C:/Users/bmw/Desktop/NB_UL_Scheduler_Prototype/Simulation/build/CMakeFiles/CMakeTmp'
 
 
     Feature record: CXX_FEATURE:0cxx_aggregate_default_initializers
@@ -428,19 +428,19 @@ mingw32-make.exe[1]: Leaving directory 'C:/Users/bmw/Desktop/Thesis_Being/NB_MAC
 
 
 Detecting CXX [-std=c++11] compiler features compiled with the following output:
-Change Dir: C:/Users/bmw/Desktop/Thesis_Being/NB_MAC_Scheduler_Prototype/Simulation/build/CMakeFiles/CMakeTmp
+Change Dir: C:/Users/bmw/Desktop/NB_UL_Scheduler_Prototype/Simulation/build/CMakeFiles/CMakeTmp
 
-Run Build Command:"D:/gcc/MinGW/4.8.1-x64/bin/mingw32-make.exe" "cmTC_fe9de/fast"
-D:/gcc/MinGW/4.8.1-x64/bin/mingw32-make.exe -f CMakeFiles\cmTC_fe9de.dir\build.make CMakeFiles/cmTC_fe9de.dir/build
-mingw32-make.exe[1]: Entering directory 'C:/Users/bmw/Desktop/Thesis_Being/NB_MAC_Scheduler_Prototype/Simulation/build/CMakeFiles/CMakeTmp'
-Building CXX object CMakeFiles/cmTC_fe9de.dir/feature_tests.cxx.obj
-D:\gcc\MinGW\4.8.1-x64\bin\g++.exe     -std=c++11 -o CMakeFiles\cmTC_fe9de.dir\feature_tests.cxx.obj -c C:\Users\bmw\Desktop\Thesis_Being\NB_MAC_Scheduler_Prototype\Simulation\build\CMakeFiles\feature_tests.cxx
-Linking CXX executable cmTC_fe9de.exe
-C:\Users\bmw\Downloads\cmake-3.7.1-win64-x64\cmake-3.7.1-win64-x64\bin\cmake.exe -E cmake_link_script CMakeFiles\cmTC_fe9de.dir\link.txt --verbose=1
-C:\Users\bmw\Downloads\cmake-3.7.1-win64-x64\cmake-3.7.1-win64-x64\bin\cmake.exe -E remove -f CMakeFiles\cmTC_fe9de.dir/objects.a
-D:\gcc\MinGW\4.8.1-x64\bin\ar.exe cr CMakeFiles\cmTC_fe9de.dir/objects.a @CMakeFiles\cmTC_fe9de.dir\objects1.rsp
-D:\gcc\MinGW\4.8.1-x64\bin\g++.exe       -Wl,--whole-archive CMakeFiles\cmTC_fe9de.dir/objects.a -Wl,--no-whole-archive  -o cmTC_fe9de.exe -Wl,--out-implib,libcmTC_fe9de.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles\cmTC_fe9de.dir\linklibs.rsp
-mingw32-make.exe[1]: Leaving directory 'C:/Users/bmw/Desktop/Thesis_Being/NB_MAC_Scheduler_Prototype/Simulation/build/CMakeFiles/CMakeTmp'
+Run Build Command:"D:/gcc/MinGW/4.8.1-x64/bin/mingw32-make.exe" "cmTC_2b2e4/fast"
+D:/gcc/MinGW/4.8.1-x64/bin/mingw32-make.exe -f CMakeFiles\cmTC_2b2e4.dir\build.make CMakeFiles/cmTC_2b2e4.dir/build
+mingw32-make.exe[1]: Entering directory 'C:/Users/bmw/Desktop/NB_UL_Scheduler_Prototype/Simulation/build/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_2b2e4.dir/feature_tests.cxx.obj
+D:\gcc\MinGW\4.8.1-x64\bin\g++.exe     -std=c++11 -o CMakeFiles\cmTC_2b2e4.dir\feature_tests.cxx.obj -c C:\Users\bmw\Desktop\NB_UL_Scheduler_Prototype\Simulation\build\CMakeFiles\feature_tests.cxx
+Linking CXX executable cmTC_2b2e4.exe
+C:\Users\bmw\Downloads\cmake-3.7.1-win64-x64\cmake-3.7.1-win64-x64\bin\cmake.exe -E cmake_link_script CMakeFiles\cmTC_2b2e4.dir\link.txt --verbose=1
+C:\Users\bmw\Downloads\cmake-3.7.1-win64-x64\cmake-3.7.1-win64-x64\bin\cmake.exe -E remove -f CMakeFiles\cmTC_2b2e4.dir/objects.a
+D:\gcc\MinGW\4.8.1-x64\bin\ar.exe cr CMakeFiles\cmTC_2b2e4.dir/objects.a @CMakeFiles\cmTC_2b2e4.dir\objects1.rsp
+D:\gcc\MinGW\4.8.1-x64\bin\g++.exe       -Wl,--whole-archive CMakeFiles\cmTC_2b2e4.dir/objects.a -Wl,--no-whole-archive  -o cmTC_2b2e4.exe -Wl,--out-implib,libcmTC_2b2e4.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles\cmTC_2b2e4.dir\linklibs.rsp
+mingw32-make.exe[1]: Leaving directory 'C:/Users/bmw/Desktop/NB_UL_Scheduler_Prototype/Simulation/build/CMakeFiles/CMakeTmp'
 
 
     Feature record: CXX_FEATURE:0cxx_aggregate_default_initializers
@@ -503,19 +503,19 @@ mingw32-make.exe[1]: Leaving directory 'C:/Users/bmw/Desktop/Thesis_Being/NB_MAC
 
 
 Detecting CXX [-std=c++98] compiler features compiled with the following output:
-Change Dir: C:/Users/bmw/Desktop/Thesis_Being/NB_MAC_Scheduler_Prototype/Simulation/build/CMakeFiles/CMakeTmp
+Change Dir: C:/Users/bmw/Desktop/NB_UL_Scheduler_Prototype/Simulation/build/CMakeFiles/CMakeTmp
 
-Run Build Command:"D:/gcc/MinGW/4.8.1-x64/bin/mingw32-make.exe" "cmTC_d2eed/fast"
-D:/gcc/MinGW/4.8.1-x64/bin/mingw32-make.exe -f CMakeFiles\cmTC_d2eed.dir\build.make CMakeFiles/cmTC_d2eed.dir/build
-mingw32-make.exe[1]: Entering directory 'C:/Users/bmw/Desktop/Thesis_Being/NB_MAC_Scheduler_Prototype/Simulation/build/CMakeFiles/CMakeTmp'
-Building CXX object CMakeFiles/cmTC_d2eed.dir/feature_tests.cxx.obj
-D:\gcc\MinGW\4.8.1-x64\bin\g++.exe     -std=c++98 -o CMakeFiles\cmTC_d2eed.dir\feature_tests.cxx.obj -c C:\Users\bmw\Desktop\Thesis_Being\NB_MAC_Scheduler_Prototype\Simulation\build\CMakeFiles\feature_tests.cxx
-Linking CXX executable cmTC_d2eed.exe
-C:\Users\bmw\Downloads\cmake-3.7.1-win64-x64\cmake-3.7.1-win64-x64\bin\cmake.exe -E cmake_link_script CMakeFiles\cmTC_d2eed.dir\link.txt --verbose=1
-C:\Users\bmw\Downloads\cmake-3.7.1-win64-x64\cmake-3.7.1-win64-x64\bin\cmake.exe -E remove -f CMakeFiles\cmTC_d2eed.dir/objects.a
-D:\gcc\MinGW\4.8.1-x64\bin\ar.exe cr CMakeFiles\cmTC_d2eed.dir/objects.a @CMakeFiles\cmTC_d2eed.dir\objects1.rsp
-D:\gcc\MinGW\4.8.1-x64\bin\g++.exe       -Wl,--whole-archive CMakeFiles\cmTC_d2eed.dir/objects.a -Wl,--no-whole-archive  -o cmTC_d2eed.exe -Wl,--out-implib,libcmTC_d2eed.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles\cmTC_d2eed.dir\linklibs.rsp
-mingw32-make.exe[1]: Leaving directory 'C:/Users/bmw/Desktop/Thesis_Being/NB_MAC_Scheduler_Prototype/Simulation/build/CMakeFiles/CMakeTmp'
+Run Build Command:"D:/gcc/MinGW/4.8.1-x64/bin/mingw32-make.exe" "cmTC_033a2/fast"
+D:/gcc/MinGW/4.8.1-x64/bin/mingw32-make.exe -f CMakeFiles\cmTC_033a2.dir\build.make CMakeFiles/cmTC_033a2.dir/build
+mingw32-make.exe[1]: Entering directory 'C:/Users/bmw/Desktop/NB_UL_Scheduler_Prototype/Simulation/build/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_033a2.dir/feature_tests.cxx.obj
+D:\gcc\MinGW\4.8.1-x64\bin\g++.exe     -std=c++98 -o CMakeFiles\cmTC_033a2.dir\feature_tests.cxx.obj -c C:\Users\bmw\Desktop\NB_UL_Scheduler_Prototype\Simulation\build\CMakeFiles\feature_tests.cxx
+Linking CXX executable cmTC_033a2.exe
+C:\Users\bmw\Downloads\cmake-3.7.1-win64-x64\cmake-3.7.1-win64-x64\bin\cmake.exe -E cmake_link_script CMakeFiles\cmTC_033a2.dir\link.txt --verbose=1
+C:\Users\bmw\Downloads\cmake-3.7.1-win64-x64\cmake-3.7.1-win64-x64\bin\cmake.exe -E remove -f CMakeFiles\cmTC_033a2.dir/objects.a
+D:\gcc\MinGW\4.8.1-x64\bin\ar.exe cr CMakeFiles\cmTC_033a2.dir/objects.a @CMakeFiles\cmTC_033a2.dir\objects1.rsp
+D:\gcc\MinGW\4.8.1-x64\bin\g++.exe       -Wl,--whole-archive CMakeFiles\cmTC_033a2.dir/objects.a -Wl,--no-whole-archive  -o cmTC_033a2.exe -Wl,--out-implib,libcmTC_033a2.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles\cmTC_033a2.dir\linklibs.rsp
+mingw32-make.exe[1]: Leaving directory 'C:/Users/bmw/Desktop/NB_UL_Scheduler_Prototype/Simulation/build/CMakeFiles/CMakeTmp'
 
 
     Feature record: CXX_FEATURE:0cxx_aggregate_default_initializers

@@ -42,10 +42,10 @@ RM = C:\Users\bmw\Downloads\cmake-3.7.1-win64-x64\cmake-3.7.1-win64-x64\bin\cmak
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = C:\Users\bmw\Desktop\Thesis_Being\NB_MAC_Scheduler_Prototype\Simulation\src
+CMAKE_SOURCE_DIR = C:\Users\bmw\Desktop\NB_UL_Scheduler_Prototype\Simulation\src
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = C:\Users\bmw\Desktop\Thesis_Being\NB_MAC_Scheduler_Prototype\Simulation\build
+CMAKE_BINARY_DIR = C:\Users\bmw\Desktop\NB_UL_Scheduler_Prototype\Simulation\build
 
 # Include any dependencies generated for this target.
 include CMakeFiles/Simulation.dir/depend.make
@@ -57,17 +57,17 @@ include CMakeFiles/Simulation.dir/progress.make
 include CMakeFiles/Simulation.dir/flags.make
 
 CMakeFiles/Simulation.dir/rrc_NB.c.obj: CMakeFiles/Simulation.dir/flags.make
-CMakeFiles/Simulation.dir/rrc_NB.c.obj: C:/Users/bmw/Desktop/Thesis_Being/NB_MAC_Scheduler_Prototype/Simulation/src/rrc_NB.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\bmw\Desktop\Thesis_Being\NB_MAC_Scheduler_Prototype\Simulation\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object CMakeFiles/Simulation.dir/rrc_NB.c.obj"
-	D:\gcc\MinGW\4.8.1-x64\bin\gcc.exe  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\Simulation.dir\rrc_NB.c.obj   -c C:\Users\bmw\Desktop\Thesis_Being\NB_MAC_Scheduler_Prototype\Simulation\src\rrc_NB.c
+CMakeFiles/Simulation.dir/rrc_NB.c.obj: C:/Users/bmw/Desktop/NB_UL_Scheduler_Prototype/Simulation/src/rrc_NB.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\bmw\Desktop\NB_UL_Scheduler_Prototype\Simulation\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object CMakeFiles/Simulation.dir/rrc_NB.c.obj"
+	D:\gcc\MinGW\4.8.1-x64\bin\gcc.exe  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\Simulation.dir\rrc_NB.c.obj   -c C:\Users\bmw\Desktop\NB_UL_Scheduler_Prototype\Simulation\src\rrc_NB.c
 
 CMakeFiles/Simulation.dir/rrc_NB.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/Simulation.dir/rrc_NB.c.i"
-	D:\gcc\MinGW\4.8.1-x64\bin\gcc.exe  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\bmw\Desktop\Thesis_Being\NB_MAC_Scheduler_Prototype\Simulation\src\rrc_NB.c > CMakeFiles\Simulation.dir\rrc_NB.c.i
+	D:\gcc\MinGW\4.8.1-x64\bin\gcc.exe  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\bmw\Desktop\NB_UL_Scheduler_Prototype\Simulation\src\rrc_NB.c > CMakeFiles\Simulation.dir\rrc_NB.c.i
 
 CMakeFiles/Simulation.dir/rrc_NB.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/Simulation.dir/rrc_NB.c.s"
-	D:\gcc\MinGW\4.8.1-x64\bin\gcc.exe  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\bmw\Desktop\Thesis_Being\NB_MAC_Scheduler_Prototype\Simulation\src\rrc_NB.c -o CMakeFiles\Simulation.dir\rrc_NB.c.s
+	D:\gcc\MinGW\4.8.1-x64\bin\gcc.exe  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\bmw\Desktop\NB_UL_Scheduler_Prototype\Simulation\src\rrc_NB.c -o CMakeFiles\Simulation.dir\rrc_NB.c.s
 
 CMakeFiles/Simulation.dir/rrc_NB.c.obj.requires:
 
@@ -81,17 +81,17 @@ CMakeFiles/Simulation.dir/rrc_NB.c.obj.provides.build: CMakeFiles/Simulation.dir
 
 
 CMakeFiles/Simulation.dir/eNB_scheduler_NB.cpp.obj: CMakeFiles/Simulation.dir/flags.make
-CMakeFiles/Simulation.dir/eNB_scheduler_NB.cpp.obj: C:/Users/bmw/Desktop/Thesis_Being/NB_MAC_Scheduler_Prototype/Simulation/src/eNB_scheduler_NB.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\bmw\Desktop\Thesis_Being\NB_MAC_Scheduler_Prototype\Simulation\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/Simulation.dir/eNB_scheduler_NB.cpp.obj"
-	D:\gcc\MinGW\4.8.1-x64\bin\g++.exe   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\Simulation.dir\eNB_scheduler_NB.cpp.obj -c C:\Users\bmw\Desktop\Thesis_Being\NB_MAC_Scheduler_Prototype\Simulation\src\eNB_scheduler_NB.cpp
+CMakeFiles/Simulation.dir/eNB_scheduler_NB.cpp.obj: C:/Users/bmw/Desktop/NB_UL_Scheduler_Prototype/Simulation/src/eNB_scheduler_NB.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\bmw\Desktop\NB_UL_Scheduler_Prototype\Simulation\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/Simulation.dir/eNB_scheduler_NB.cpp.obj"
+	D:\gcc\MinGW\4.8.1-x64\bin\g++.exe   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\Simulation.dir\eNB_scheduler_NB.cpp.obj -c C:\Users\bmw\Desktop\NB_UL_Scheduler_Prototype\Simulation\src\eNB_scheduler_NB.cpp
 
 CMakeFiles/Simulation.dir/eNB_scheduler_NB.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Simulation.dir/eNB_scheduler_NB.cpp.i"
-	D:\gcc\MinGW\4.8.1-x64\bin\g++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\bmw\Desktop\Thesis_Being\NB_MAC_Scheduler_Prototype\Simulation\src\eNB_scheduler_NB.cpp > CMakeFiles\Simulation.dir\eNB_scheduler_NB.cpp.i
+	D:\gcc\MinGW\4.8.1-x64\bin\g++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\bmw\Desktop\NB_UL_Scheduler_Prototype\Simulation\src\eNB_scheduler_NB.cpp > CMakeFiles\Simulation.dir\eNB_scheduler_NB.cpp.i
 
 CMakeFiles/Simulation.dir/eNB_scheduler_NB.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Simulation.dir/eNB_scheduler_NB.cpp.s"
-	D:\gcc\MinGW\4.8.1-x64\bin\g++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\bmw\Desktop\Thesis_Being\NB_MAC_Scheduler_Prototype\Simulation\src\eNB_scheduler_NB.cpp -o CMakeFiles\Simulation.dir\eNB_scheduler_NB.cpp.s
+	D:\gcc\MinGW\4.8.1-x64\bin\g++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\bmw\Desktop\NB_UL_Scheduler_Prototype\Simulation\src\eNB_scheduler_NB.cpp -o CMakeFiles\Simulation.dir\eNB_scheduler_NB.cpp.s
 
 CMakeFiles/Simulation.dir/eNB_scheduler_NB.cpp.obj.requires:
 
@@ -105,17 +105,17 @@ CMakeFiles/Simulation.dir/eNB_scheduler_NB.cpp.obj.provides.build: CMakeFiles/Si
 
 
 CMakeFiles/Simulation.dir/eNB_scheduler_ulsch_NB.cpp.obj: CMakeFiles/Simulation.dir/flags.make
-CMakeFiles/Simulation.dir/eNB_scheduler_ulsch_NB.cpp.obj: C:/Users/bmw/Desktop/Thesis_Being/NB_MAC_Scheduler_Prototype/Simulation/src/eNB_scheduler_ulsch_NB.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\bmw\Desktop\Thesis_Being\NB_MAC_Scheduler_Prototype\Simulation\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/Simulation.dir/eNB_scheduler_ulsch_NB.cpp.obj"
-	D:\gcc\MinGW\4.8.1-x64\bin\g++.exe   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\Simulation.dir\eNB_scheduler_ulsch_NB.cpp.obj -c C:\Users\bmw\Desktop\Thesis_Being\NB_MAC_Scheduler_Prototype\Simulation\src\eNB_scheduler_ulsch_NB.cpp
+CMakeFiles/Simulation.dir/eNB_scheduler_ulsch_NB.cpp.obj: C:/Users/bmw/Desktop/NB_UL_Scheduler_Prototype/Simulation/src/eNB_scheduler_ulsch_NB.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\bmw\Desktop\NB_UL_Scheduler_Prototype\Simulation\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/Simulation.dir/eNB_scheduler_ulsch_NB.cpp.obj"
+	D:\gcc\MinGW\4.8.1-x64\bin\g++.exe   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\Simulation.dir\eNB_scheduler_ulsch_NB.cpp.obj -c C:\Users\bmw\Desktop\NB_UL_Scheduler_Prototype\Simulation\src\eNB_scheduler_ulsch_NB.cpp
 
 CMakeFiles/Simulation.dir/eNB_scheduler_ulsch_NB.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Simulation.dir/eNB_scheduler_ulsch_NB.cpp.i"
-	D:\gcc\MinGW\4.8.1-x64\bin\g++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\bmw\Desktop\Thesis_Being\NB_MAC_Scheduler_Prototype\Simulation\src\eNB_scheduler_ulsch_NB.cpp > CMakeFiles\Simulation.dir\eNB_scheduler_ulsch_NB.cpp.i
+	D:\gcc\MinGW\4.8.1-x64\bin\g++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\bmw\Desktop\NB_UL_Scheduler_Prototype\Simulation\src\eNB_scheduler_ulsch_NB.cpp > CMakeFiles\Simulation.dir\eNB_scheduler_ulsch_NB.cpp.i
 
 CMakeFiles/Simulation.dir/eNB_scheduler_ulsch_NB.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Simulation.dir/eNB_scheduler_ulsch_NB.cpp.s"
-	D:\gcc\MinGW\4.8.1-x64\bin\g++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\bmw\Desktop\Thesis_Being\NB_MAC_Scheduler_Prototype\Simulation\src\eNB_scheduler_ulsch_NB.cpp -o CMakeFiles\Simulation.dir\eNB_scheduler_ulsch_NB.cpp.s
+	D:\gcc\MinGW\4.8.1-x64\bin\g++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\bmw\Desktop\NB_UL_Scheduler_Prototype\Simulation\src\eNB_scheduler_ulsch_NB.cpp -o CMakeFiles\Simulation.dir\eNB_scheduler_ulsch_NB.cpp.s
 
 CMakeFiles/Simulation.dir/eNB_scheduler_ulsch_NB.cpp.obj.requires:
 
@@ -129,17 +129,17 @@ CMakeFiles/Simulation.dir/eNB_scheduler_ulsch_NB.cpp.obj.provides.build: CMakeFi
 
 
 CMakeFiles/Simulation.dir/eNB_scheduler_dlsch_NB.cpp.obj: CMakeFiles/Simulation.dir/flags.make
-CMakeFiles/Simulation.dir/eNB_scheduler_dlsch_NB.cpp.obj: C:/Users/bmw/Desktop/Thesis_Being/NB_MAC_Scheduler_Prototype/Simulation/src/eNB_scheduler_dlsch_NB.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\bmw\Desktop\Thesis_Being\NB_MAC_Scheduler_Prototype\Simulation\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/Simulation.dir/eNB_scheduler_dlsch_NB.cpp.obj"
-	D:\gcc\MinGW\4.8.1-x64\bin\g++.exe   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\Simulation.dir\eNB_scheduler_dlsch_NB.cpp.obj -c C:\Users\bmw\Desktop\Thesis_Being\NB_MAC_Scheduler_Prototype\Simulation\src\eNB_scheduler_dlsch_NB.cpp
+CMakeFiles/Simulation.dir/eNB_scheduler_dlsch_NB.cpp.obj: C:/Users/bmw/Desktop/NB_UL_Scheduler_Prototype/Simulation/src/eNB_scheduler_dlsch_NB.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\bmw\Desktop\NB_UL_Scheduler_Prototype\Simulation\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/Simulation.dir/eNB_scheduler_dlsch_NB.cpp.obj"
+	D:\gcc\MinGW\4.8.1-x64\bin\g++.exe   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\Simulation.dir\eNB_scheduler_dlsch_NB.cpp.obj -c C:\Users\bmw\Desktop\NB_UL_Scheduler_Prototype\Simulation\src\eNB_scheduler_dlsch_NB.cpp
 
 CMakeFiles/Simulation.dir/eNB_scheduler_dlsch_NB.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Simulation.dir/eNB_scheduler_dlsch_NB.cpp.i"
-	D:\gcc\MinGW\4.8.1-x64\bin\g++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\bmw\Desktop\Thesis_Being\NB_MAC_Scheduler_Prototype\Simulation\src\eNB_scheduler_dlsch_NB.cpp > CMakeFiles\Simulation.dir\eNB_scheduler_dlsch_NB.cpp.i
+	D:\gcc\MinGW\4.8.1-x64\bin\g++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\bmw\Desktop\NB_UL_Scheduler_Prototype\Simulation\src\eNB_scheduler_dlsch_NB.cpp > CMakeFiles\Simulation.dir\eNB_scheduler_dlsch_NB.cpp.i
 
 CMakeFiles/Simulation.dir/eNB_scheduler_dlsch_NB.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Simulation.dir/eNB_scheduler_dlsch_NB.cpp.s"
-	D:\gcc\MinGW\4.8.1-x64\bin\g++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\bmw\Desktop\Thesis_Being\NB_MAC_Scheduler_Prototype\Simulation\src\eNB_scheduler_dlsch_NB.cpp -o CMakeFiles\Simulation.dir\eNB_scheduler_dlsch_NB.cpp.s
+	D:\gcc\MinGW\4.8.1-x64\bin\g++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\bmw\Desktop\NB_UL_Scheduler_Prototype\Simulation\src\eNB_scheduler_dlsch_NB.cpp -o CMakeFiles\Simulation.dir\eNB_scheduler_dlsch_NB.cpp.s
 
 CMakeFiles/Simulation.dir/eNB_scheduler_dlsch_NB.cpp.obj.requires:
 
@@ -153,17 +153,17 @@ CMakeFiles/Simulation.dir/eNB_scheduler_dlsch_NB.cpp.obj.provides.build: CMakeFi
 
 
 CMakeFiles/Simulation.dir/eNB_scheduler_bch_NB.cpp.obj: CMakeFiles/Simulation.dir/flags.make
-CMakeFiles/Simulation.dir/eNB_scheduler_bch_NB.cpp.obj: C:/Users/bmw/Desktop/Thesis_Being/NB_MAC_Scheduler_Prototype/Simulation/src/eNB_scheduler_bch_NB.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\bmw\Desktop\Thesis_Being\NB_MAC_Scheduler_Prototype\Simulation\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/Simulation.dir/eNB_scheduler_bch_NB.cpp.obj"
-	D:\gcc\MinGW\4.8.1-x64\bin\g++.exe   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\Simulation.dir\eNB_scheduler_bch_NB.cpp.obj -c C:\Users\bmw\Desktop\Thesis_Being\NB_MAC_Scheduler_Prototype\Simulation\src\eNB_scheduler_bch_NB.cpp
+CMakeFiles/Simulation.dir/eNB_scheduler_bch_NB.cpp.obj: C:/Users/bmw/Desktop/NB_UL_Scheduler_Prototype/Simulation/src/eNB_scheduler_bch_NB.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\bmw\Desktop\NB_UL_Scheduler_Prototype\Simulation\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/Simulation.dir/eNB_scheduler_bch_NB.cpp.obj"
+	D:\gcc\MinGW\4.8.1-x64\bin\g++.exe   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\Simulation.dir\eNB_scheduler_bch_NB.cpp.obj -c C:\Users\bmw\Desktop\NB_UL_Scheduler_Prototype\Simulation\src\eNB_scheduler_bch_NB.cpp
 
 CMakeFiles/Simulation.dir/eNB_scheduler_bch_NB.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Simulation.dir/eNB_scheduler_bch_NB.cpp.i"
-	D:\gcc\MinGW\4.8.1-x64\bin\g++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\bmw\Desktop\Thesis_Being\NB_MAC_Scheduler_Prototype\Simulation\src\eNB_scheduler_bch_NB.cpp > CMakeFiles\Simulation.dir\eNB_scheduler_bch_NB.cpp.i
+	D:\gcc\MinGW\4.8.1-x64\bin\g++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\bmw\Desktop\NB_UL_Scheduler_Prototype\Simulation\src\eNB_scheduler_bch_NB.cpp > CMakeFiles\Simulation.dir\eNB_scheduler_bch_NB.cpp.i
 
 CMakeFiles/Simulation.dir/eNB_scheduler_bch_NB.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Simulation.dir/eNB_scheduler_bch_NB.cpp.s"
-	D:\gcc\MinGW\4.8.1-x64\bin\g++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\bmw\Desktop\Thesis_Being\NB_MAC_Scheduler_Prototype\Simulation\src\eNB_scheduler_bch_NB.cpp -o CMakeFiles\Simulation.dir\eNB_scheduler_bch_NB.cpp.s
+	D:\gcc\MinGW\4.8.1-x64\bin\g++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\bmw\Desktop\NB_UL_Scheduler_Prototype\Simulation\src\eNB_scheduler_bch_NB.cpp -o CMakeFiles\Simulation.dir\eNB_scheduler_bch_NB.cpp.s
 
 CMakeFiles/Simulation.dir/eNB_scheduler_bch_NB.cpp.obj.requires:
 
@@ -177,17 +177,17 @@ CMakeFiles/Simulation.dir/eNB_scheduler_bch_NB.cpp.obj.provides.build: CMakeFile
 
 
 CMakeFiles/Simulation.dir/eNB_scheduler_RA_NB.cpp.obj: CMakeFiles/Simulation.dir/flags.make
-CMakeFiles/Simulation.dir/eNB_scheduler_RA_NB.cpp.obj: C:/Users/bmw/Desktop/Thesis_Being/NB_MAC_Scheduler_Prototype/Simulation/src/eNB_scheduler_RA_NB.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\bmw\Desktop\Thesis_Being\NB_MAC_Scheduler_Prototype\Simulation\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/Simulation.dir/eNB_scheduler_RA_NB.cpp.obj"
-	D:\gcc\MinGW\4.8.1-x64\bin\g++.exe   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\Simulation.dir\eNB_scheduler_RA_NB.cpp.obj -c C:\Users\bmw\Desktop\Thesis_Being\NB_MAC_Scheduler_Prototype\Simulation\src\eNB_scheduler_RA_NB.cpp
+CMakeFiles/Simulation.dir/eNB_scheduler_RA_NB.cpp.obj: C:/Users/bmw/Desktop/NB_UL_Scheduler_Prototype/Simulation/src/eNB_scheduler_RA_NB.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\bmw\Desktop\NB_UL_Scheduler_Prototype\Simulation\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/Simulation.dir/eNB_scheduler_RA_NB.cpp.obj"
+	D:\gcc\MinGW\4.8.1-x64\bin\g++.exe   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\Simulation.dir\eNB_scheduler_RA_NB.cpp.obj -c C:\Users\bmw\Desktop\NB_UL_Scheduler_Prototype\Simulation\src\eNB_scheduler_RA_NB.cpp
 
 CMakeFiles/Simulation.dir/eNB_scheduler_RA_NB.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Simulation.dir/eNB_scheduler_RA_NB.cpp.i"
-	D:\gcc\MinGW\4.8.1-x64\bin\g++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\bmw\Desktop\Thesis_Being\NB_MAC_Scheduler_Prototype\Simulation\src\eNB_scheduler_RA_NB.cpp > CMakeFiles\Simulation.dir\eNB_scheduler_RA_NB.cpp.i
+	D:\gcc\MinGW\4.8.1-x64\bin\g++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\bmw\Desktop\NB_UL_Scheduler_Prototype\Simulation\src\eNB_scheduler_RA_NB.cpp > CMakeFiles\Simulation.dir\eNB_scheduler_RA_NB.cpp.i
 
 CMakeFiles/Simulation.dir/eNB_scheduler_RA_NB.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Simulation.dir/eNB_scheduler_RA_NB.cpp.s"
-	D:\gcc\MinGW\4.8.1-x64\bin\g++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\bmw\Desktop\Thesis_Being\NB_MAC_Scheduler_Prototype\Simulation\src\eNB_scheduler_RA_NB.cpp -o CMakeFiles\Simulation.dir\eNB_scheduler_RA_NB.cpp.s
+	D:\gcc\MinGW\4.8.1-x64\bin\g++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\bmw\Desktop\NB_UL_Scheduler_Prototype\Simulation\src\eNB_scheduler_RA_NB.cpp -o CMakeFiles\Simulation.dir\eNB_scheduler_RA_NB.cpp.s
 
 CMakeFiles/Simulation.dir/eNB_scheduler_RA_NB.cpp.obj.requires:
 
@@ -201,17 +201,17 @@ CMakeFiles/Simulation.dir/eNB_scheduler_RA_NB.cpp.obj.provides.build: CMakeFiles
 
 
 CMakeFiles/Simulation.dir/eNB_schedule_helper_NB.cpp.obj: CMakeFiles/Simulation.dir/flags.make
-CMakeFiles/Simulation.dir/eNB_schedule_helper_NB.cpp.obj: C:/Users/bmw/Desktop/Thesis_Being/NB_MAC_Scheduler_Prototype/Simulation/src/eNB_schedule_helper_NB.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\bmw\Desktop\Thesis_Being\NB_MAC_Scheduler_Prototype\Simulation\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/Simulation.dir/eNB_schedule_helper_NB.cpp.obj"
-	D:\gcc\MinGW\4.8.1-x64\bin\g++.exe   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\Simulation.dir\eNB_schedule_helper_NB.cpp.obj -c C:\Users\bmw\Desktop\Thesis_Being\NB_MAC_Scheduler_Prototype\Simulation\src\eNB_schedule_helper_NB.cpp
+CMakeFiles/Simulation.dir/eNB_schedule_helper_NB.cpp.obj: C:/Users/bmw/Desktop/NB_UL_Scheduler_Prototype/Simulation/src/eNB_schedule_helper_NB.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\bmw\Desktop\NB_UL_Scheduler_Prototype\Simulation\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/Simulation.dir/eNB_schedule_helper_NB.cpp.obj"
+	D:\gcc\MinGW\4.8.1-x64\bin\g++.exe   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\Simulation.dir\eNB_schedule_helper_NB.cpp.obj -c C:\Users\bmw\Desktop\NB_UL_Scheduler_Prototype\Simulation\src\eNB_schedule_helper_NB.cpp
 
 CMakeFiles/Simulation.dir/eNB_schedule_helper_NB.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Simulation.dir/eNB_schedule_helper_NB.cpp.i"
-	D:\gcc\MinGW\4.8.1-x64\bin\g++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\bmw\Desktop\Thesis_Being\NB_MAC_Scheduler_Prototype\Simulation\src\eNB_schedule_helper_NB.cpp > CMakeFiles\Simulation.dir\eNB_schedule_helper_NB.cpp.i
+	D:\gcc\MinGW\4.8.1-x64\bin\g++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\bmw\Desktop\NB_UL_Scheduler_Prototype\Simulation\src\eNB_schedule_helper_NB.cpp > CMakeFiles\Simulation.dir\eNB_schedule_helper_NB.cpp.i
 
 CMakeFiles/Simulation.dir/eNB_schedule_helper_NB.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Simulation.dir/eNB_schedule_helper_NB.cpp.s"
-	D:\gcc\MinGW\4.8.1-x64\bin\g++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\bmw\Desktop\Thesis_Being\NB_MAC_Scheduler_Prototype\Simulation\src\eNB_schedule_helper_NB.cpp -o CMakeFiles\Simulation.dir\eNB_schedule_helper_NB.cpp.s
+	D:\gcc\MinGW\4.8.1-x64\bin\g++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\bmw\Desktop\NB_UL_Scheduler_Prototype\Simulation\src\eNB_schedule_helper_NB.cpp -o CMakeFiles\Simulation.dir\eNB_schedule_helper_NB.cpp.s
 
 CMakeFiles/Simulation.dir/eNB_schedule_helper_NB.cpp.obj.requires:
 
@@ -248,7 +248,7 @@ Simulation.exe: CMakeFiles/Simulation.dir/build.make
 Simulation.exe: CMakeFiles/Simulation.dir/linklibs.rsp
 Simulation.exe: CMakeFiles/Simulation.dir/objects1.rsp
 Simulation.exe: CMakeFiles/Simulation.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=C:\Users\bmw\Desktop\Thesis_Being\NB_MAC_Scheduler_Prototype\Simulation\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Linking CXX executable Simulation.exe"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=C:\Users\bmw\Desktop\NB_UL_Scheduler_Prototype\Simulation\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Linking CXX executable Simulation.exe"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles\Simulation.dir\link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
@@ -271,6 +271,6 @@ CMakeFiles/Simulation.dir/clean:
 .PHONY : CMakeFiles/Simulation.dir/clean
 
 CMakeFiles/Simulation.dir/depend:
-	$(CMAKE_COMMAND) -E cmake_depends "MinGW Makefiles" C:\Users\bmw\Desktop\Thesis_Being\NB_MAC_Scheduler_Prototype\Simulation\src C:\Users\bmw\Desktop\Thesis_Being\NB_MAC_Scheduler_Prototype\Simulation\src C:\Users\bmw\Desktop\Thesis_Being\NB_MAC_Scheduler_Prototype\Simulation\build C:\Users\bmw\Desktop\Thesis_Being\NB_MAC_Scheduler_Prototype\Simulation\build C:\Users\bmw\Desktop\Thesis_Being\NB_MAC_Scheduler_Prototype\Simulation\build\CMakeFiles\Simulation.dir\DependInfo.cmake --color=$(COLOR)
+	$(CMAKE_COMMAND) -E cmake_depends "MinGW Makefiles" C:\Users\bmw\Desktop\NB_UL_Scheduler_Prototype\Simulation\src C:\Users\bmw\Desktop\NB_UL_Scheduler_Prototype\Simulation\src C:\Users\bmw\Desktop\NB_UL_Scheduler_Prototype\Simulation\build C:\Users\bmw\Desktop\NB_UL_Scheduler_Prototype\Simulation\build C:\Users\bmw\Desktop\NB_UL_Scheduler_Prototype\Simulation\build\CMakeFiles\Simulation.dir\DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/Simulation.dir/depend
 
