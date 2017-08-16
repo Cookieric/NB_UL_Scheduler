@@ -250,6 +250,7 @@ uint32_t check_if_NPRACH(SIB2_NB & SIB2_NB_S,uint32_t UL_ChannelTime,uint32_t Fr
 	return 0;
 }
 
+
 #define sib1_startingRF 0 // it means SIB1 start sched at first RF.  1 means start at second RF.
 uint32_t sib1_Period=256;//256 RF
 bool shcedSIB1=false;
@@ -257,6 +258,48 @@ bool shcedSIB1=false;
 // uint32_t SIscheSubframe;
 // uint32_t t_si_Period,t_si_windowStart,si_windowEnd;
 
+uint32_t fill_DL_subframe_bitmap(uint32_t Sche_H_SFN,uint32_t scheFrame,uint32_t scheSubframe,MIB_NB & MIB_NB_S,SIB1_NB & SIB1_NB_S,uint32_t *DL_Channel_bitmap,uint32_t T_bitmap)
+{
+   if(scheSubframe==5) DL_Channel_bitmap[T_bitmap]=NPSS; //Reserve for NPSS, not send MAC_PDU/DCI
+    // if(scheSubframe==5) return 0; //Reserve for NPSS, not send MAC_PDU/DCI
+    else if(((scheFrame & 0x01)==0)&&(scheSubframe==9))
+    {
+        // LOG("(frame & 0x01):%d\n",(frame & 0x01));
+        DL_Channel_bitmap[T_bitmap]=NSSS;//Reserve for NSSS, not send MAC_PDU/DCI
+        // return 0;
+    }
+    // else if(scheSubframe==0)    return 0;//mac_rrc_data_req(get MIB content from RRC)
+    else if(scheSubframe==0)    DL_Channel_bitmap[T_bitmap]=NPBCH;//mac_rrc_data_req(get MIB content from RRC)
+
+    /*SIB1-NB in subframe #4 of every other frame in 16 continuous frames. Period = 256RF*/
+    uint32_t repetitionNum_SIB1=repetiitonSIB1(MIB_NB_S.schedulingInfoSIB1);//4
+    uint32_t startRF_SIB1=RFstartSIB1(repetitionNum_SIB1);//0
+    uint32_t TBS_Index=MIB_NB_S.schedulingInfoSIB1;
+    uint32_t TBS_SIB1=getTBS_SIB1(TBS_Index);
+    uint32_t repetitionOffset=sib1_Period/repetitionNum_SIB1;//64
+	uint32_t T=Sche_H_SFN * 10240+scheFrame * 10+scheSubframe;
+	uint32_t SIB1_T=T%repetitionOffset;//144 mod 64=16
+    if((0<=SIB1_T)&&(SIB1_T<=16))   shcedSIB1=true;//0~15
+    else	shcedSIB1=false;
+    //Bug fixed(frame & 0x01==0)-->((frame & 0x01)==0)
+    if (shcedSIB1&&((scheFrame & 0x01)==sib1_startingRF)&&(scheSubframe==4))
+    {
+        DL_Channel_bitmap[T_bitmap]=SIB1;
+        // return 0;
+    }
+    uint32_t t_si_Period;
+    //1,3,5...15,...65,67,...scheFrame
+	uint32_t SIB2_T=(T%SIB1_NB_S.si_Periodicity);//131%640=131,132%640=132,...143%640=143...651%640=11....799%640=159
+    if((0<=SIB2_T)&&(SIB2_T<SIB1_NB_S.si_WindowLength)&&((scheFrame & 0x01)== SIB1_NB_S.si_RadioFrameOffset))
+    {
+        DL_Channel_bitmap[T_bitmap]=SIB23;
+        // return 0;
+    }
+    if(DL_Channel_bitmap[T_bitmap]==NA)	return T;
+    else	return 0;
+}
+
+// uint32_t check_if_DL_subframe(uint32_t Sche_H_SFN,uint32_t scheFrame,uint32_t scheSubframe,MIB_NB & MIB_NB_S,SIB1_NB & SIB1_NB_S,uint32_t *DL_Channel_bitmap,uint32_t T_bitmap)
 uint32_t check_if_DL_subframe(uint32_t Sche_H_SFN,uint32_t scheFrame,uint32_t scheSubframe,MIB_NB & MIB_NB_S,SIB1_NB & SIB1_NB_S)
 {
     // if(scheSubframe==5) DL_Channel_bitmap[i]=NPSS; //Reserve for NPSS, not send MAC_PDU/DCI
@@ -538,6 +581,13 @@ uint8_t DCIs_resource_determinaiton(uint32_t scheH_SFN,uint32_t scheFrame,uint32
 
 uint32_t get_CE_level()
 {
+	static uint32_t CE=0;
+	uint32_t pc=CE;
+	// LOG("CE:%d\n",CE);
+	// system("pause");
+	++CE;
+	if(CE==3)	CE=0;
+	return pc;
 	// double PC[3]={0.6,0.2,0};//CE leve(0,1,2)-->(40%,40%,20%), ratio of devices in period_UL report.
 	// double PC[3]={0.66,0.33,0};//CE leve(0,1,2)-->(33%,33%,33%), ratio of devices in period_UL report.
 	// double pc=uniform_rng();
@@ -550,16 +600,16 @@ uint32_t get_CE_level()
 	// 	system("pause");
 	// 	exit(1);
 	// }
-	uint32_t pc=rand()%3;
-	if(pc==0)	return pc;
-	else if(pc==1)	return pc;
-	else if(pc==2)	return pc;
-	else
-	{
-		LOG("Abnormal probability in get_CE_level()\n");
-		system("pause");
-		exit(1);
-	}
+	// uint32_t pc=rand()%3;
+	// if(pc==0)	return pc;
+	// else if(pc==1)	return pc;
+	// else if(pc==2)	return pc;
+	// else
+	// {
+	// 	LOG("Abnormal probability in get_CE_level()\n");
+	// 	system("pause");
+	// 	exit(1);
+	// }
 }
 
 uint8_t get_multi_tone_support()
@@ -735,7 +785,7 @@ uint32_t Ulsch_ind(frame_t frame,sub_frame_t subframes,UL_IND_t & UL_Indicaiton)
     // ctime=H_SFN * 10240+frame * 10+subframes; // calculate the current time
     if(((H_SFN * 10240+frame * 10+subframes)%1000)==0)//New UE's Msg3 arrive with fixed Inter aiival time
     {
-    	if(highOfferedLoad==0)	new_num_UE=6;
+    	if(highOfferedLoad==0)	new_num_UE=20;
     	else if(highOfferedLoad==1)	new_num_UE=10;
 
     	totalNumUE=totalNumUE+new_num_UE;

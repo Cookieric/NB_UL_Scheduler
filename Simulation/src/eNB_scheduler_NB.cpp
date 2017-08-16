@@ -82,6 +82,7 @@ double P_delay[6]={0.0};
 
 extern uint32_t cnt_CRC;
 uint32_t cnt_N=0;
+uint32_t cnt_DCI=0;
 
 //1: pp are same for 3 CE levels
 //2: pp are different for 3 CE levels
@@ -92,13 +93,16 @@ uint32_t cnt_N=0;
 uint8_t highOfferedLoad=0;
 
 //Simulation setting
-uint8_t TotalNumUE[10]={30,12,18,24,30,36,42,48,54,60};
+uint8_t TotalNumUE[10]={60,12,18,24,30,36,42,48,54,60};
 //{24,48,72,96,120,144,168,192,216,240};
 //{12,24,36,48,60,72,84,96,108,120};
 //{20,40,60,80,100,120,140,160,180,200};
 uint32_t TotalNumUE_H[10]={50,20,120,80,100,120,140,160,180,200};
 uint8_t runCase;//0,1,2,3,4,5,6,7,8,9
 // extern int Sum_Delay;
+
+
+ofstream timeCost;
 
 
 //Evaluate BSR map to different range of BSR table in eNB.
@@ -114,6 +118,7 @@ ofstream AverageDelay_pp_not_sameCE0_H,AverageDelay_pp_not_sameCE1_H,AverageDela
 uint32_t simDataSize=0;
 // uint32_t DataSize[10]={220,240,260,280,300,320,340,360,380,400};
 uint32_t DataSize[10]={20,40,60,80,100,120,140,160,180,200};
+// uint32_t DataSize[7]={20,30,40,50,60,70,80,90,100,};
 // uint32_t DataSize[16]={200,220,240,260,280,300,320,340,359,380,400,420,440,460,480,500};
 uint32_t indexDataSize=0;
 //0:highest, 1:medium, 2:lowest
@@ -145,8 +150,8 @@ double T_Average_Delay[3][10]={0};
 
 int main(int argc, char const *argv[])//design simulation base on different argv/argc form bat...
 {
-	clock_t t;
-	t = clock();
+	clock_t t,temp_T;
+	// t = clock();
 	srand(time(NULL));
 	if(argc!=2)
 	{
@@ -221,6 +226,7 @@ int main(int argc, char const *argv[])//design simulation base on different argv
 	}
 	else if(simCase==3)
 	{
+		timeCost.open("../build/Matlab_Result/timeCost.csv", ios::app);
 		resourceUtilization__payloadSize.open("Matlab_Result\\resourceUtili_payloadSize.csv", ios::app);
 		AverageDelay_payloadSizeCE0.open("Matlab_Result\\AverageDelay_payloadSizeCE0.csv", ios::app);
 		AverageDelay_payloadSizeCE1.open("Matlab_Result\\AverageDelay_payloadSizeCE1.csv", ios::app);
@@ -269,6 +275,8 @@ int main(int argc, char const *argv[])//design simulation base on different argv
 		Sfreq[i]=4*i;//{0,4,8,12,16,20,24,28,32,36,40,44}
 		LOG("%d " ,Sfreq[i]);
 	}
+	// uint32_t L_Sfreq=Sfreq.size();
+	// LOG("L_Sfreq:%d\n",L_Sfreq);
 	LOG("\n");
 	system("pause");
 
@@ -297,6 +305,8 @@ int main(int argc, char const *argv[])//design simulation base on different argv
 	// reserve_schedule_MIB(frame,subframes,NPDCCH_period,DL_Channel_bitmap,true);//NPBCH
 	// reserve_schedule_SI(frame,subframes,NPDCCH_period,DL_Channel_bitmap,&MIB_NB_S, &SIB1_NB_S,true);
 	//NPDCCH Period base scheudling for MIB/SIB1/23 and UL;  RA and DL not done.
+	//Initial clock
+	temp_T= clock();
 	//Start to schedule
 	while(1)
 	{
@@ -466,9 +476,16 @@ int main(int argc, char const *argv[])//design simulation base on different argv
 			UE_id=0;
 			UL_Channel.clear();
 			UL_Channel.assign (numTone,0);
+			if(simTimes%1000==0)
+			{
+				t = clock()-temp_T;
+				timeCost<<simTimes<<","<<((float)t)/CLOCKS_PER_SEC<<endl;
+			}
 			simTimes++;
 			if(simTimes==10000)
 			{
+				t = clock()-temp_T;
+				timeCost<<simTimes<<","<<((float)t)/CLOCKS_PER_SEC<<endl;
 				if(simCase==3)
 				{
 				    T_Average_Delay[0][runCase]=(double)Sum_Delay[0]/CEi_NumUE[0];
@@ -512,9 +529,10 @@ int main(int argc, char const *argv[])//design simulation base on different argv
 					// LOG("CE0:%d,Sum_Delay[0]:%d,CE1:%d,Sum_Delay[1]:%d,CE2:%d,Sum_Delay[2]:%d\n",CEi_NumUE[0],Sum_Delay[0],CEi_NumUE[1],Sum_Delay[1],CEi_NumUE[2],Sum_Delay[2]);
     	// 			LOG("T_Average_DelayCE0:%lf,T_Average_DelayCE1:%lf,T_Average_DelayCE2:%lf,T_AvailResource[runCase]:%d,T_OccupiedResource[runCase]:%d,U:%lf\n",T_Average_Delay[0][runCase],T_Average_Delay[1][runCase],T_Average_Delay[2][runCase],T_AvailResource[runCase],T_OccupiedResource[runCase],T_OccupiedResource[runCase]/T_AvailResource[runCase]);
 
-    				fout_LOG<<"OccupiedResource:"<<T_OccupiedResource[runCase]<<"AvailResource:"<<T_AvailResource[runCase]<<"cnt_CRC:"<<cnt_CRC<<"cnt_N:"<<cnt_N<<endl;
+    				fout_LOG<<"OccupiedResource:"<<T_OccupiedResource[runCase]<<"AvailResource:"<<T_AvailResource[runCase]<<"cnt_CRC:"<<cnt_CRC<<"cnt_N:"<<cnt_N<<"cnt_DCI:"<<cnt_DCI<<endl;
     				fout_LOG<<"U:"<<T_OccupiedResource[runCase]/T_AvailResource[runCase]<<endl;
 					fout_LOG<<"Sum_End_Time:"<<Sum_End_Time<<",Sum_nprach_resource_U:"<<Sum_nprach_resource_U<<",Sum_Occupied_resource__U:"<<Sum_Occupied_resource__U<<endl;
+					fout_LOG<<"CE0_NumUE:"<<CEi_NumUE[0]<<"CE1_NumUE:"<<CEi_NumUE[1]<<"CE2_NumUE:"<<CEi_NumUE[2]<<endl;
 
 
 					for (int i = 0; i < 3; ++i)
@@ -522,6 +540,9 @@ int main(int argc, char const *argv[])//design simulation base on different argv
 						Sum_Delay[i]=0;
 						CEi_NumUE[i]=0;
 					}
+					cnt_DCI=0;
+					cnt_N=0;
+					cnt_CRC=0;
 					Sum_End_Time=0;
 					Sum_nprach_resource_U=0;
 					Sum_Occupied_resource__U=0;
@@ -644,6 +665,7 @@ int main(int argc, char const *argv[])//design simulation base on different argv
 	{
 		// totalNumUE=TotalNumUE_H[runCase];
 	 //    resourceUtilization__payloadSize<<simDataSize<<","<<T_OccupiedResource[runCase]/T_AvailResource[runCase]<<endl;
+		timeCost.close();
 		resourceUtilization__payloadSize.close();
 		// AverageDelay_payloadSizeCE0<<simDataSize<<","<<T_Average_Delay[0][runCase]<<endl;
 		// AverageDelay_payloadSizeCE1<<simDataSize<<","<<T_Average_Delay[1][runCase]<<endl;

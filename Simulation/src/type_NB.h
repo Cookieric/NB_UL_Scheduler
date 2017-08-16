@@ -31,7 +31,7 @@ typedef enum channel_E{
 	NSSS,
 	NPBCH,
 	SIB1,
-	SIB2_3,
+	SIB23,
 	NPDCCH,
 	NPDSCH,
 	//UL

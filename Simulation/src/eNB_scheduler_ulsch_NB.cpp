@@ -30,7 +30,9 @@ uint32_t max_mcs[2]={10,12};
 // uint32_t mapped_mcs[3][8]={{1,5,9,10,3,7,11,12},
 // 							{0,3,7,10,3,7,11,12},
 // 							{0,2,6,10,0,4,8,12}};
-uint32_t mapped_mcs[4]={1,4,7,10};
+// uint32_t mapped_mcs[4]={1,4,7,10};
+uint32_t mapped_mcs[4]={0,3,5,7};
+// uint32_t mapped_mcs[4]={0,2,4,6};
 #define L_DCI_PDU 6
 char DCI_PDU_type[L_DCI_PDU][20] = {
 	"DCIFormatN0",
@@ -88,6 +90,8 @@ extern uint8_t highOfferedLoad;
 // printf("Time taken: %.2fs\n", (double)(clock() - tStart)/CLOCKS_PER_SEC);
 // return 0;
 extern uint32_t cnt_N;
+extern uint32_t cnt_DCI;
+uint32_t *DL_Channel_bitmap;
 
 // void NB_schedule_ulsch(frame_t frame,sub_frame_t subframes,uint32_t NPDCCH_period,uint32_t *DL_Channel_bitmap,
 // 	uint32_t **UL_Channel_bitmap,SIB2_NB * SIB2_NB_S,UL_IND_t & UL_Indicaiton)
@@ -143,7 +147,7 @@ void NB_schedule_ulsch(uint32_t scheH_SFN,frame_t scheFrame,sub_frame_t scheSubf
         //     NPDCCH_period=CSS_NPDCCH_period[CE_Level];
         //     npdcch_Offset=SIB2_NB_S.npdcch_Offset_RA[CE_Level];
         //     T_SearchSpace=SIB2_NB_S.npdcch_NumRepetitions_RA[CE_Level];
-        // }
+        // }f
         // else
         // {
            NPDCCH_period=USS_NPDCCH_period[CE_Level];
@@ -155,6 +159,7 @@ void NB_schedule_ulsch(uint32_t scheH_SFN,frame_t scheFrame,sub_frame_t scheSubf
         uint32_t offsetSearchSpace=npdcch_Offset * NPDCCH_period;
         // LOG("offsetSearchSpace:%d,H_SFN:%d,frame:%d,subframe:%d\n",offsetSearchSpace,scheH_SFN,scheFrame,scheSubframe);
         uint32_t schedTime=scheH_SFN * 10240+scheFrame * 10+scheSubframe;
+
         scheSubframe=(schedTime+offsetSearchSpace)%10;
         scheFrame=((schedTime+offsetSearchSpace)/10)%1024;
         scheH_SFN=(schedTime+scheSubframe+offsetSearchSpace)/10240;
@@ -297,18 +302,52 @@ void NB_schedule_ulsch(uint32_t scheH_SFN,frame_t scheFrame,sub_frame_t scheSubf
 		    	continue;
 		    }
 
+			DL_Channel_bitmap=(uint32_t *)calloc(NPDCCH_period,sizeof(uint32_t));
+
+			uint32_t T_bitmap=0;
+			uint32_t DCI_S=0;
+
+			/*With DL bitmap*/
+			// while(cntSearchspace<=T_SearchSpace/2)
+			// {
+			// 	DCI_S=fill_DL_subframe_bitmap(scheH_SFN,scheFrame,scheSubframe,MIB_NB_S,SIB1_NB_S,DL_Channel_bitmap,T_bitmap);
+			// 	if(DCI_S!=0)//Get current time of DL subframe
+			// 	{
+			// 		++cntSearchspace;
+			// 	}
+			// 	++scheSubframe;
+			// 	++T_bitmap;
+			// 	if(scheSubframe==10)
+			// 	{
+			// 		scheSubframe=0;
+			// 		++scheFrame;
+			// 	}
+			// 	if(scheFrame==1024)
+			// 	{
+			// 		scheFrame=0;
+			// 		scheH_SFN++;
+		 //  		}
+			// }
+			// cntSearchspace=0;
+			// DCI_S=0;
+			// T_bitmap=0;
+		 //    scheSubframe=(schedTime+offsetSearchSpace)%10;
+		 //    scheFrame=((schedTime+offsetSearchSpace)/10)%1024;
+		 //    scheH_SFN=(schedTime+scheSubframe+offsetSearchSpace)/10240;
+
 
 			//Step 1: DCI resource determination(NCCE resource allocation)
 			HI_DCI0_request_t DCI_Info={0};
             //Get Aggregation level base on Rmax/R and CE level
             DCI_Info.DCI_Format.DCI_UL_PDU.Aggregation_L=get_aggregation(CE_Level,T_SearchSpace,DCI_Rep[CE_Level]);
 			bool Find_S=true;//find start time of DCI only once
-            uint32_t DCI_S=0;
+            // uint32_t DCI_S=0;
             //cntSearchspace:Index of search sapce,T_SearchSpace:The length of search sapce
 	    	while(cntSearchspace<=T_SearchSpace/2)
     		{
     			// fout_LOG<<"[Step1]"<<"UE_Id:"<<(*it1).UE_id<<endl;
                 // LOG("scheH_SFN:%d,scheFrame:%d,scheSubframe:%d\n",scheH_SFN,scheFrame,scheSubframe);
+	    		// DCI_S=check_if_DL_subframe(scheH_SFN,scheFrame,scheSubframe,MIB_NB_S,SIB1_NB_S,DL_Channel_bitmap,T_bitmap);
 	    		DCI_S=check_if_DL_subframe(scheH_SFN,scheFrame,scheSubframe,MIB_NB_S,SIB1_NB_S);
                 // LOG("CurrentTime:%d,cntSearchspace:%d\n",DCI_S,cntSearchspace);
 	    		if(DCI_S!=0)//Get current time of DL subframe
@@ -483,6 +522,8 @@ void NB_schedule_ulsch(uint32_t scheH_SFN,frame_t scheFrame,sub_frame_t scheSubf
 			    // cout<<"cnt_default:"<<cnt_default<<"cntSearchspace: "<<cntSearchspace<<endl;
 			    // system("pause");
 			}// end of while
+			free(DL_Channel_bitmap);
+
             //Recover DCIs squence base on earlier start time of DCIs in DCI_List .
             DCI_List.sort(compareMyType5);
 			//Check if DCI have available reosurce in this pp.
@@ -491,6 +532,7 @@ void NB_schedule_ulsch(uint32_t scheH_SFN,frame_t scheFrame,sub_frame_t scheSubf
  			// fout_LOG<<"No DCIs available reosurce in this pp..."<<"CE_Level:"<<(*it1).CE_Level<<" UE_id "<<(*it1).UE_id<<" schedMsg3:"<<(*it1).schedMsg3<<" CRC:"<<(*it1).CRC_indication<<" round:"<<(*it1).round<<" first_Arrival_Time:"<<" sche_Msg5_Time:"<<(*it1).sche_Msg5_Time<<" UL_Buffer_Size"<<(*it1).UL_Buffer_Size<<endl;
                 // LOG("No DCIs available reosurce in this pp...\n");
                 // system("pause");
+            	cnt_DCI++;
                 continue;
             }
 		   	if(LOG_Flag)
@@ -523,10 +565,14 @@ void NB_schedule_ulsch(uint32_t scheH_SFN,frame_t scheFrame,sub_frame_t scheSubf
 			uint32_t UL_ChannelTime=0,Isc=0,ScheDelay=0;
 			uint32_t shcedulingdelay[4]={8,16,32,64};
 			// i is the number of scheduling delay elements, which can be a constant
-			for (int i = 0; i < sizeof(shcedulingdelay)/sizeof(uint32_t); ++i)
+			uint32_t L_Sfreq=Sfreq.size();
+			uint32_t L_schedelay=sizeof(shcedulingdelay)/sizeof(uint32_t);
+			// for (int j = 0; j < L_Sfreq; ++j)//{0,4,8,12,16,20,24,28,32,36,40,44}
+			for (int i = 0; i < L_schedelay; ++i)//{8,16,32,64}
 			{
 				// size of the pattern for all ce levels
-				for (int j = 0; j < Sfreq.size(); ++j)//{0,4,8,12,16,20,24,28,32,36,40,44}
+				// for (int i = 0; i < L_schedelay; ++i)//{8,16,32,64}
+				for (int j = 0; j < L_Sfreq; ++j)//{0,4,8,12,16,20,24,28,32,36,40,44}
 				{
 					UL_ChannelTime=(*DCI_it1).DCI_Format.DCI_UL_PDU.endTime+shcedulingdelay[i];
 					//UL_Channel array record the last time for 12 tone, update when UL transmission ends in X.
@@ -536,6 +582,7 @@ void NB_schedule_ulsch(uint32_t scheH_SFN,frame_t scheFrame,sub_frame_t scheSubf
 							continue;
 						UL_Channel[j]=UL_ChannelTime;//record startTime of UL transmission->use for UL_CONFIG_Request
 						ScheDelay=shcedulingdelay[i];
+
 						// (*DCI_it1).DCI_Format.DCI_UL_PDU.DCIN0.scind=j;
 						Isc=j;
 						break;
@@ -543,6 +590,7 @@ void NB_schedule_ulsch(uint32_t scheH_SFN,frame_t scheFrame,sub_frame_t scheSubf
 				}
 				if(ScheDelay!=0)	break;
 			}
+
 			// LOG("UE_id:%d,Idelay:%d,Isc:%d,UL transmission startTime:%d\n",(*it1).UE_id,ScheDelay,Isc,UL_Channel[Isc]);
 			// system("pause");
 			//delete DCI in DCI list if there's no available UL resource-->sche this UE in next pp.
@@ -596,7 +644,7 @@ void NB_schedule_ulsch(uint32_t scheH_SFN,frame_t scheFrame,sub_frame_t scheSubf
     // 			}
 				// mcs=mapped_mcs[(*it1).CE_Level][mappedMcsIndex];
 				mcs=mapped_mcs[(*it1).PHR];
-				// mcs=6;
+				// mcs=5;
 				TBS=get_TBS_UL(mcs,(*it1).multi_tone,ru_index,max_Iru);
 				// mcs=6;
 				// TBS=get_TBS_UL(mcs,(*it1).multi_tone,ru_index,max_Iru);
